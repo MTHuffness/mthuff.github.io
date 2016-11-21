@@ -51,25 +51,23 @@ body {
     list-style-type: none;
 }
 #sideLinks {
-    position: fixed;
-    width: 27.45%;
+    position: absolute;
+    width: 91%;
     bottom: 0;
-    margin: 0;
 }
 .linkDiv {
     height: 150px;
-    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
-    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
-    width: 100%;
+    background: -webkit-linear-gradient(to left, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
+    background: -o-linear-gradient(to left, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
     cursor: pointer;
     display: none;
-    margin: 0;
     border: 1px solid rgba(0, 0, 0, 1);
-    margin-bottom: 10px;
     color: black;
     text-shadow: 2px 2px 8px rgba(189, 188, 196, .75);
     text-align: center;
+    width: 100%;   
+    margin-bottom: 10px;
 }
 .linkDivHover {
     height: 150px;
@@ -79,10 +77,10 @@ body {
     cursor: pointer;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
-    margin-bottom: 10px;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     text-align: center;
+    margin-bottom: 10px;
 }
 .linkDivClick {
     height: 150px;
