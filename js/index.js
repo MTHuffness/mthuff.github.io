@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.mainDiv').fadeIn(1400);
-    $('.linkDiv').effect('slide', 'left', 1400);
+    $('.linkDiv').effect('slide', 'right', 1400);
     $('.linkDiv').hover(
         function() {
             $(this).removeClass("linkDiv").addClass("linkDivHover");

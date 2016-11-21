@@ -1,14 +1,8 @@
 /*BODY STYLING -------------------------------------------------------*/
 body {
     background-color: rgba(0, 0, 0, 1);
+    margin: 0;
 }
-.body {
-    width: 90%;
-    border: 1px solid black;
-    margin: 0 auto;
-    height: 100%;
-}
-
 /*FONT STYLING--------------------------------------------------------*/
 .font1 {
     color: white;
@@ -42,11 +36,13 @@ body {
     display: none;
 }
 .sideDiv {
-    float: left;
+    float: right;
     width: 30%;
     height: 100%;
     box-sizing: border-box;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    right: 0;
 }
 
 /*SIDE LINK STYLING-----------------------------------------------------*/
@@ -54,45 +50,45 @@ body {
     list-style-position: inside;
     list-style-type: none;
 }
-.linkDivH1 {
-    text-align: center;
-    background: rgba(0, 0, 0, .5);
-    height: 50%;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
-}
-.linkDivH1Hover {
-    text-align: center;
-    height: 50%;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+#sideLinks {
+    position: fixed;
+    width: 27.45%;
+    bottom: 0;
+    margin: 0;
 }
 .linkDiv {
-    height: 170px;
-    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(189, 188, 196, .75) 100%);
-    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(189, 188, 196, .75) 100%);
+    height: 150px;
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
+    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
     width: 100%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
     cursor: pointer;
     display: none;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 2px 2px 8px rgba(189, 188, 196, .75);
+    text-align: center;
 }
 .linkDivHover {
-    height: 170px;
-    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 0, 0, .75) 100%);
-    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 0, 0, .75) 100%);
+    height: 150px;
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, .75) 100%);
+    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, .75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, .75) 100%);
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
     cursor: pointer;
     border-top: 2px solid gold;
     border-bottom: 2px solid gold;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    text-align: center;
 }
 .linkDivClick {
-    height: 170px;
-    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 255, .75) 100%);
-    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 255, .75) 100%);
+    height: 150px;
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 255, .75) 100%);
+    background: -o-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 255, .75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 255, .75) 100%);
-    width: 100%;
-    border-radius: 50px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
