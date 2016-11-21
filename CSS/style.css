@@ -36,11 +36,10 @@ body {
     width: 70%;
     height: 100%;
     box-sizing: border-box;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, 1) 20%);
-    background: -o-linear-gradient(rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, 1) 20%);
-    background: linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(189, 188, 196, .5) 10%);
+    background: -webkit-linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(189, 188, 196, 1) 20%);
+    background: -o-linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(189, 188, 196, 1) 20%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(189, 188, 196, .5) 10%);
     display: none;
-    box-shadow: 0 0 10px rgba(189, 188, 196, .5);
 }
 .sideDiv {
     float: left;
@@ -55,19 +54,25 @@ body {
     list-style-position: inside;
     list-style-type: none;
 }
-    #headNavigation ul li h1 {
-        text-align: center;
-        background: rgba(0, 0, 0, .5);
-        height: 50%;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
-    }
+.linkDivH1 {
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    height: 50%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+.linkDivH1Hover {
+    text-align: center;
+    height: 50%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
 .linkDiv {
     height: 170px;
     background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(189, 188, 196, .75) 100%);
     background: -o-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(189, 188, 196, .75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(189, 188, 196, .75) 100%);
     width: 100%;
-    border-radius: 100px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
     cursor: pointer;
     display: none;
 }
@@ -76,9 +81,11 @@ body {
     background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 0, 0, .75) 100%);
     background: -o-linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 0, 0, .75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, .75) 100%);
-    width: 100%;
-    border-radius: 70px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
     cursor: pointer;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
 }
 .linkDivClick {
     height: 170px;

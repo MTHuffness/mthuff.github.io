@@ -8,6 +8,6 @@ $(document).ready(function() {
             $(this).removeClass("linkDivHover").addClass("linkDiv");
     });
     $('.linkDiv').click(function() {
-            $(this).removeClass("linkDivHover").addClass("linkDivClick");
+            $(this).effect('bounce',{times:1}, 200).removeClass("linkDivHover").addClass("linkDivClick");
     })
 });
