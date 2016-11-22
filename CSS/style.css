@@ -68,6 +68,12 @@ body {
     text-align: center;
     width: 100%;   
     margin-bottom: 10px;
+    opacity: .5;
+}
+.linkDivH1 {
+    float: right;
+    width: 50%;
+    margin-right: 20%;
 }
 .linkDivHover {
     height: 150px;
@@ -75,8 +81,8 @@ body {
     background: -o-linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, .75) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(255, 0, 0, .75) 100%);
     cursor: pointer;
-    border-top: 2px solid gold;
-    border-bottom: 2px solid gold;
+    border-top: 4px solid darkgoldenrod;
+    border-bottom: 1px solid darkgoldenrod;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
     text-align: center;
@@ -89,4 +95,26 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 255, .75) 100%);
     cursor: pointer;
     margin-bottom: 10px;
+}
+/*SIDE BAR SHAPES----------------------------------------------------------*/
+.rightTriangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid black;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    float: left;
+    display: none;
+}
+.rightTriangle2 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid darkgoldenrod;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    float: left;
+}
+.link3d {
+	-webkit-perspective: 1000px;
+	perspective: 1000px; 
 }
