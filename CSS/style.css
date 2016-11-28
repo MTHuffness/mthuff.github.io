@@ -82,6 +82,9 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	transition-property: background, color, text-shadow;
+	transition-duration: .5s, 1s, .5s;
+	transition-timing-function: linear;
 }
 
 .grid figure figcaption::before,
@@ -115,4 +118,9 @@ figure.effect-apollo:hover figcaption::before {
 	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
 	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,90deg) translate3d(0,100%,0);
 	box-shadow: 0 0 8px silver;
+}
+figure.effect-apollo:hover figcaption {
+	background: red;
+	color: silver;
+	text-shadow: 0 0 10px black;
 }
