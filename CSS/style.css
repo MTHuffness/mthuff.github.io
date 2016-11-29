@@ -5,6 +5,15 @@ body {
 	background: url('../images/brickback.jpg') center ;
 	background-size: 40%;
 }
+header {
+	margin: 0;
+	position: absolute;
+	top: 5%;
+	left: 0;
+	height: 10%;
+	width: 70%;
+	background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, .5) 5%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, .5) 60%);
+}
 /*FONT STYLING--------------------------------------------------------*/
 .font1 {
     color: white;
@@ -30,11 +39,21 @@ body {
 }
 .centerFont {
     text-align: center;
-    margin-top: 100px;
-    font-size: 2rem;
+}
+.rightFont {
+	text-align: right;
 }
 .fontBig {
 	font-size: 3rem;
+}
+.fontBig2 {
+	font-size: 4rem;
+}
+.upperCase {
+	text-transform: uppercase;
+}
+header h1 {
+	margin: 0 0 0 10%;
 }
 
 /*MAIN & SIDE HOUSING STYLING ----------------------------------------*/
@@ -50,7 +69,26 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, .5) 5%, rgba(0, 0, 0, 1) 10%);
     display: none;
 	border-top-right-radius: 100px;
+	box-shadow: 0 0 8px silver;
 }
+#logoHousing {
+	border: 1px solid white;
+	width: 100%;
+	height: 35%;
+	border-radius: 100%/50%;
+	background: linear-gradient(
+		rgba(192, 192, 192, .5),
+		rgba(0, 0, 0, 0),
+		rgba(192, 192, 192, .5)
+	);
+	border: 1px solid black;
+	margin: 0 auto 5%;
+}
+	#logoHousing img {
+		margin: 8% 10%;
+		width: 80%;
+		height: 85%;
+	}
 .sideDiv {
 	top: 2%;
 	bottom: 2%;
@@ -138,7 +176,6 @@ figure.effect-apollo:hover figcaption {
 	color: silver;
 	text-shadow: 0 0 10px black;
 }
-
 
 /*MAIN LINK PAGES---------------------------------------------------------------------*/
 
