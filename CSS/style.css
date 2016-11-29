@@ -71,29 +71,11 @@ header h1 {
 	border-top-right-radius: 100px;
 	box-shadow: 0 0 8px silver;
 }
-#logoHousing {
-	border: 1px solid white;
-	width: 100%;
-	height: 35%;
-	border-radius: 100%/50%;
-	background: linear-gradient(
-		rgba(192, 192, 192, .5),
-		rgba(0, 0, 0, 0),
-		rgba(192, 192, 192, .5)
-	);
-	border: 1px solid black;
-	margin: 0 auto 5%;
-}
-	#logoHousing img {
-		margin: 8% 10%;
-		width: 80%;
-		height: 85%;
-	}
 .sideDiv {
 	top: 2%;
 	bottom: 2%;
-	left: 73%;
-	width: 25%;
+	left: 78%;
+	width: 20%;
 	box-sizing: border-box;
 	background: -webkit-linear-gradient(rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1));
 	background: -o-linear-gradient(rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1));
@@ -102,6 +84,24 @@ header h1 {
 	right: 0;
 	border-radius: 20px;
 }
+#logoHousing {
+	border: 1px solid white;
+	width: 100%;
+	height: 30%;
+	border-radius: 100%/50%;
+	background: linear-gradient(
+		rgba(192, 192, 192, .1),
+		rgba(192, 192, 192, .4),
+		rgba(192, 192, 192, .1)
+	);
+	border: 1px solid black;
+	margin: 0 auto 5%;
+}
+	#logoHousing img {
+		margin: 8% 15%;
+		width: 70%;
+		height: 85%;
+	}
 /*SIDE LINK STYLING--------------------------------------------------------*/
 .grid {
 	clear: both;
