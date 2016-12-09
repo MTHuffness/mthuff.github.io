@@ -119,6 +119,25 @@ nav {
     filter: brightness(1.2);
     transform: translate(0, 2px);
 }
+
+@media (max-width: 26rem) {
+    #title h1 {
+        color: red;
+    }
+    .link {
+        float: none;
+        margin: 0;
+    }
+    header {
+        transform: rotate(0deg);
+        height: 5%;
+        width: 51%;
+    }
+    nav {
+        transform: rotate(0deg);
+        width: 50%;
+    }
+}
 /*CURRENT PAGE LINK STYLING---------------------------------------------------------------------*/
 .linkCurrent a {
     color: rgba(0, 100, 100, 1);
@@ -163,6 +182,14 @@ nav {
         margin-top: -15%;
         margin-left: 10%;
         width: 80%;
+    }
+}
+@media (max-width: 89rem) {
+    #logo {
+        width: 50%;
+        margin-left: -35%;
+        margin-top: -28%;
+        border: none;
     }
 }
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
