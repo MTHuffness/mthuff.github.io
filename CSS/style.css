@@ -121,9 +121,6 @@ nav {
 }
 
 @media (max-width: 26rem) {
-    #title h1 {
-        color: red;
-    }
     .link {
         float: none;
         margin: 0;
@@ -190,6 +187,7 @@ nav {
         margin-left: -35%;
         margin-top: -28%;
         border: none;
+        background: transparent;    
     }
 }
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
@@ -233,7 +231,6 @@ section {
     letter-spacing: 15px;
     color: rgba(0, 100, 100, .8);
 }
-
 /*SIDEBAR STYLING--------------------------------------------------------------------------------*/
 aside {
     float: left;
@@ -267,3 +264,26 @@ footer {
         margin-top: 2%;
         margin-right: 1%;
     }
+
+
+
+@media (max-width: 26rem) {
+    #primary {
+        width: 90%; 
+        margin: 2% 5%;
+        float: none;
+    }
+    #title {
+        width: 95%;
+        margin-left: 2.5%;   
+    }
+    #title h1 {
+        color: black;
+        text-shadow: 0 0 10px rgba(100, 100, 100, .75);
+    }
+    #sideBar {
+        float: none;
+        width: 70%;
+        margin: 0 15% 5%; 
+    }
+}
