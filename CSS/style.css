@@ -13,9 +13,10 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transform: rotate(-6deg);
 }
-@media (max-width: 89rem) {
+@media (max-width: 65rem) {
     header {
-        margin-top: 0;    
+        margin-left: -1%;
+        width: 85%;
     }
 }
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
@@ -68,18 +69,6 @@ header {
     }
 }
 /*IPAD DIMENSIONS (LANDSCAPE)*/
-@media (max-width: 65rem) {
-    #title {
-        color: red;
-    }
-    #logo {
-        margin-top: 2.85%;
-    }
-    #header {
-        margin-right: 10%;
-    }
-}
-
 @media (max-width: 60rem) {
     #sideBar {
         margin-right: 2.5%;
