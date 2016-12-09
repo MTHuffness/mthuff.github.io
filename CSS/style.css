@@ -63,12 +63,15 @@ header {
     }
 }
 /*IPAD DIMENSIONS (LANDSCAPE)*/
-@media (max-width: 69rem) {
+@media (max-width: 64rem) {
     #title {
         color: red;
     }
     #logo {
-        margin-top: 2.4%;
+        margin-top: 2.9%;
+    }
+    #header {
+        margin-right: 10%;
     }
 }
 
@@ -159,6 +162,7 @@ nav {
     transform: scale(7, .5) rotate(-90deg);
     margin-top: -7%;
     margin-left: 40%;
+    display: none;
 }
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
 main {
