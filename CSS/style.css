@@ -63,7 +63,7 @@ header {
     }
 }
 /*IPAD DIMENSIONS (LANDSCAPE)*/
-@media (max-width: 64rem) {
+@media (max-width: 65rem) {
     #title {
         color: red;
     }
