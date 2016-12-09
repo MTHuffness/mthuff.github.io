@@ -157,6 +157,47 @@ footer {
         margin-right: 1%;
     }
 
+
+/*PORTFOLIO PAGE STYLING-------------------------------------------------------------------------*/
+
+
+/*ABOUT PAGE STYLING-------------------------------------------------------------------------*/   
+
+
+/*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
+#contactPrimary {
+    width: 50%;
+    position: relative;
+    margin-left: 30%;
+}
+form {
+    padding: 2%;
+}
+input, textarea {
+    display: block;
+}
+.formArea {
+    width: 95%;
+    margin-bottom: 1%;
+    height: 30px;
+    background: rgba(0, 100, 100, .5);
+    border: none;
+    transition: 2s;
+    font-size: 1.4rem;
+}
+textarea {
+    width: 95%;
+    border: none;
+    background: rgba(0, 100, 100, .5);
+    transition: 2s;
+    font-size: 1.4rem;
+}
+.formArea:focus, textarea:focus {
+    background: black;
+    border: 1px solid silver;
+    color: white;
+}
+
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
 @media (max-width: 93rem) {
     #logo {
@@ -192,6 +233,10 @@ footer {
     }
     #title h1 {
         letter-spacing: 10px;
+    }
+    #contactPrimary {
+        margin-left: 23.3%;
+        margin-right: 2.5%;
     }
 }
 @media (max-width: 83rem) {
@@ -241,6 +286,10 @@ footer {
     #title h1 {
         letter-spacing: 3px;
     }
+    #contactPrimary {
+        margin-left: 10%;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 58rem) {
@@ -281,6 +330,7 @@ footer {
         text-shadow: 0 0 10px rgba(100, 100, 100, .75);
     }
     #sideBar {
+        clear: both;
         float: none;
         width: 70%;
         margin: 0 15% 5%; 
@@ -289,5 +339,10 @@ footer {
         margin-top: -35%;
         margin-left: -35%;
         width: 50%;
+    }
+    #contactPrimary {
+        display: block;
+        width: 90%;
+        margin: 5%;
     }
 }
