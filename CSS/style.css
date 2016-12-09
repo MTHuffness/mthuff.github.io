@@ -67,6 +67,9 @@ header {
     #title {
         color: red;
     }
+    #logo {
+        margin-top: 2.4%;
+    }
 }
 
 @media (max-width: 60rem) {
