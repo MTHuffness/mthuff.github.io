@@ -222,19 +222,27 @@ footer {
 
 
 /*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
+#companyInfo {
+    width: 20%;
+    background: rgba(0, 0, 0, 1);
+}
 #contactPrimary {
     width: 50%;
     position: relative;
     margin-left: 30%;
 }
 form {
-    padding: 2%;
+    padding: 4%;
+}
+label {
+    font-size: 1.5rem;
+    
 }
 input, textarea {
     display: block;
 }
 .formArea {
-    width: 95%;
+    width: 100%;
     margin-bottom: 1%;
     height: 30px;
     background: rgba(0, 100, 100, .5);
@@ -243,7 +251,7 @@ input, textarea {
     font-size: 1.4rem;
 }
 textarea {
-    width: 95%;
+    width: 100%;
     border: none;
     background: rgba(0, 100, 100, .5);
     transition: 2s;
