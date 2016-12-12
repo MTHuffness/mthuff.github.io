@@ -442,6 +442,7 @@ textarea {
         margin-top: -26%;
         margin-left: -30%;
         width: 50%;
+        display: none;
     }
     #contactPrimary {
         display: block;
