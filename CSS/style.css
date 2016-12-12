@@ -12,6 +12,9 @@ header {
     height: 20%;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
 }
 /*NAVIGATION STYLING---------------------------------------------------------------------------*/
 nav {
