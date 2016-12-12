@@ -57,29 +57,28 @@ nav {
     height: 40%;
     position: relative;
     left: 84%;
-    top: -13.6%;
+    top: -13.7%;
     border-left: 1px solid silver;
     border-bottom: 1px solid silver;
     box-sizing: border-box;
     background: rgba(0, 0, 0, .25);
+    perspective: 800px;
+    transition: 2s;
 }
     #logo img {
         position: absolute;
-        top: 10%;
-        left: 2%;
-        height: 100%;;
-        width: auto;
-        transform: rotate(45deg) scale(1.1);
-        transition: 2s;
+        top: -5%;
+        left: -3%;
+        transform: rotate(45deg) scale(.9);
     }
-    #logo img:hover {
-        transform: rotate(405deg);
+    #logo:hover .backLogo {
+        transform: rotateY(180deg);
+        transition: 4s cubic-bezier(.55, 2.2, .52, .52);
     }
 .smallLogo {
     transform: scale(7, .5) rotate(-90deg);
     margin-top: -7%;
     margin-left: 40%;
-    display: none;
 }
 
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
@@ -113,7 +112,7 @@ article {
         font-size: 1.2rem;
         margin-right: 2%;
     }
-section {
+#title {
     text-align: center;
     text-transform: uppercase;
     border: 1px solid silver;
@@ -123,6 +122,16 @@ section {
     letter-spacing: 15px;
     color: rgba(0, 100, 100, .8);
 }
+/*MY FIRST ATTEMPT AT A TRIANGLE ABOVE THE TITLE
+#title:before {
+    display: block;
+    content: "";
+    border-left: 41.75rem solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 10rem solid silver;
+    position: relative;
+    margin-top: -24%;
+}*/
 /*SIDEBAR STYLING--------------------------------------------------------------------------------*/
 aside {
     float: left;
