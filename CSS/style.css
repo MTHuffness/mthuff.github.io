@@ -62,9 +62,15 @@ nav {
     box-sizing: border-box;
     background: rgba(0, 0, 0, .25);
     perspective: 800px;
+    -webkit-perspective: 800px;
+    -o-perspective: 800px;
+    -moz-perspective: 800px;
 }
 .logo {
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transition: 2s;
     position: absolute;
     width: 100%;
@@ -73,9 +79,15 @@ nav {
     .logo img {
         position: absolute;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         top: -8%;
         left: -6%;
         transform: rotate(45deg) scale(.9);
+        -webkit-transform: rotate(45deg) scale(.9);
+        -o-transform: rotate(45deg) scale(.9);
+        -moz-transform: rotate(45deg) scale(.9);
     }
     .logo .backLogo {
         animation: fadeDown 2s linear;
@@ -98,6 +110,9 @@ nav {
     }
 .smallLogo {
     transform: scale(7, .5) rotate(-90deg);
+    -webkit-transform: scale(7, .5) rotate(-90deg);
+    -o-transform: scale(7, .5) rotate(-90deg);
+    -moz-transform: scale(7, .5) rotate(-90deg);
     margin-top: -7%;
     margin-left: 40%;
 }
