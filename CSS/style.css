@@ -13,7 +13,6 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
     transform: rotate(-6deg);
 }
-
 /*NAVIGATION STYLING---------------------------------------------------------------------------*/
 nav {
     transform: rotate(-6deg);
@@ -52,7 +51,7 @@ nav {
 }
 
 /*LOGO STYLING----------------------------------------------------------------------------------*/
-#logo {
+#logoContainer {
     width: 16%;
     height: 40%;
     position: relative;
@@ -63,17 +62,39 @@ nav {
     box-sizing: border-box;
     background: rgba(0, 0, 0, .25);
     perspective: 800px;
-    transition: 2s;
 }
-    #logo img {
+.logo {
+    transform-style: preserve-3d;
+    transition: 2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+    .logo img {
         position: absolute;
-        top: -5%;
-        left: -3%;
+        backface-visibility: hidden;
+        top: -8%;
+        left: -6%;
         transform: rotate(45deg) scale(.9);
     }
-    #logo:hover .backLogo {
-        transform: rotateY(180deg);
-        transition: 4s cubic-bezier(.55, 2.2, .52, .52);
+    .logo .backLogo {
+        animation: fadeDown 2s linear;
+    }
+    .logo .frontLogo {
+        transform: rotateY(-180deg);
+    }
+    @keyframes fadeDown {
+        0% {
+            opacity: 0;
+            transform: rotate(45deg) translateY(-400px);
+        }
+        50% {
+            opacity: .5;
+            transform: rotate(45deg) scale(1.1);
+        }
+    }
+    .logo:hover {
+        transform: rotateY(180deg) rotate(0deg) scale(.8) translate(25%, -10%);
     }
 .smallLogo {
     transform: scale(7, .5) rotate(-90deg);
@@ -120,7 +141,6 @@ article {
     margin-left: 39.85%;
     margin-top: -5%;
     letter-spacing: 15px;
-    color: rgba(0, 100, 100, .8);
 }
 /*MY FIRST ATTEMPT AT A TRIANGLE ABOVE THE TITLE
 #title:before {
@@ -146,9 +166,19 @@ aside {
     text-align: center;
     border-bottom: 1px solid silver;
     font-size: 2rem;
-    color: rgba(0, 100, 100, 1);
+}
+/*COLOR CASCADE INFITE LOOP!!!-------------------------------------------------------------------*/
+.colorCascade {
+    color: rgba(0, 100, 100, .8);
+    animation: cascade 10s linear infinite;
 }
 
+@keyframes cascade {
+    50% {
+        color: rgba(255, 255, 255, 1);
+        transform: scale(1.25);
+    }
+}
 /*FOOTER STYLING---------------------------------------------------------------------------------*/
 footer {
     clear: both;
@@ -209,7 +239,7 @@ textarea {
 
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
 @media (max-width: 93rem) {
-    #logo {
+    #logoContainer {
         margin-top: .5%;
     }
 }
@@ -231,10 +261,10 @@ textarea {
         width: 90%;
         margin: 2% auto;
     }
-    #logo {
+    #logoContainer {
         margin-top: .9%;
     }
-    #logo img {
+    .logo img {
         transform: rotate(0deg) scale(.9) translate(5%, -10%);
     }
     #primary article p {
@@ -247,6 +277,11 @@ textarea {
         margin-left: 23.3%;
         margin-right: 2.5%;
     }
+    .smallLogo {
+        transform: scale(6, .5) rotate(-90deg);
+        margin-top: -9%;
+        margin-left: 40%;
+    }
 }
 @media (max-width: 83rem) {
     #logo {
@@ -255,11 +290,19 @@ textarea {
 }
 
 @media (max-width: 74rem) {
-    #logo {
+    #logoContainer {
         margin-top: 2%;
     }
     #title h1 {
         letter-spacing: 5px;
+    }
+    .logo img {
+        width: 90%;
+    }
+    .smallLogo {
+        transform: scale(5, .5) rotate(-90deg);
+        margin-top: -12%;
+        margin-left: 40%;
     }
 }
 
@@ -268,11 +311,8 @@ textarea {
         margin-left: -1.1%;
         width: 85%;
     }
-    #logo {
+    #logoContainer {
         margin-top: 2.85%;
-    }
-    #logo img {
-        width: 90%;
     }
 }
 
@@ -315,12 +355,15 @@ textarea {
         float: none;
         margin: 0;
     }
-    #logo {
+    #logoContainer {
         width: 30%;
         margin-top: -15%;
         margin-left: -20%;
         border: none;
         background: transparent;    
+    }
+    .smallLogo {
+        display: none;
     }
 }
 
@@ -334,19 +377,15 @@ textarea {
         width: 95%;
         margin-left: 2.5%;   
     }
-    #title h1 {
-        color: black;
-        text-shadow: 0 0 10px rgba(100, 100, 100, .75);
-    }
     #sideBar {
         clear: both;
         float: none;
         width: 70%;
         margin: 0 15% 5%; 
     }
-    #logo {
-        margin-top: -35%;
-        margin-left: -35%;
+    #logoContainer {
+        margin-top: -26%;
+        margin-left: -30%;
         width: 50%;
     }
     #contactPrimary {
