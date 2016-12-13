@@ -252,13 +252,30 @@ footer:before {
 
 /*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
 #companyInfo {
-    width: 20%;
-    background: rgba(0, 0, 0, 1);
+    float: left;
+    width: 30%;
+    height: auto;
+    margin: .5% 5%;
+    box-sizing: border-box;
+    font-size: 1.25rem;
 }
 #contactPrimary {
-    width: 50%;
-    position: relative;
-    margin-left: 30%;
+    float: left;
+    width: 55%;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    margin: 2% 0;
+}
+.contactButton {
+    margin: 5% 0 1%;
+    height: 3rem;
+    width: 100%;
+    text-orientation: upright;
+    font-size: 2rem;
+    color: silver;
+    background: radial-gradient(120% 120%, rgba(0, 100, 100, .5) 10%, rgba(0, 0, 0, 1) 70%);
+    border: 1px solid silver;
 }
 form {
     padding: 4%;
@@ -291,7 +308,6 @@ textarea {
     border: 1px solid silver;
     color: white;
 }
-
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
 @media (max-width: 93rem) {
     #logoContainer {
