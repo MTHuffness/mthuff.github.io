@@ -268,14 +268,24 @@ footer:before {
     margin: 2% 0;
 }
 .contactButton {
-    margin: 5% 0 1%;
+    margin: 5% 10% 1%;
     height: 3rem;
-    width: 100%;
+    width: 80%;
     text-orientation: upright;
     font-size: 2rem;
     color: silver;
     background: radial-gradient(120% 120%, rgba(0, 100, 100, .5) 10%, rgba(0, 0, 0, 1) 70%);
     border: 1px solid silver;
+    cursor: pointer;
+}
+.contactButton:hover {
+    transform: scale(1.01) translateY(-2px);
+    border: 1px solid rgba(0, 100, 100, 1);
+    color: rgba(0, 100, 100, 1);
+    box-shadow: 0 0 10px rgba(100, 100, 100, 1), 
+    0 0 20px rgba(100, 100, 100, .8),
+    0 0 40px rgba(100, 100, 100, .5),
+    0 0 50px rgba(100, 100, 100, .25);
 }
 form {
     padding: 4%;
