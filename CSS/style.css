@@ -233,7 +233,7 @@ nav {
     margin-right: 200px;
     flex: 3 2 auto;
     align-self: center;
-    animation: pop 2s linear;
+    animation: pop 2s 2s backwards;
 }
     #mainSummary p {
         font-size: 1.2rem;
@@ -257,15 +257,6 @@ nav {
 @keyframes pop {
     0% {
         opacity: 0;
-        transform: translateX(-400px);
-    }
-    25% {
-        opacity: .5;
-        transform: translateX(-200px);
-    }
-    70% {
-        opacity: .75;
-        transform: translateX(200px);
     }
 }
 /*MY FIRST ATTEMPT AT A TRIANGLE ABOVE THE TITLE
