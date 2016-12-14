@@ -362,6 +362,8 @@ textarea {
     .logo img {
         transform: rotate(0deg) scale(.9);
         -webkit-transform: rotate(0deg) scale(.9);
+        -o-transform: rotate(0deg) scale(.9);
+        -moz-transform: rotate(0deg) scale(.9);
         width: 90%;
         top: -35%;
         left: 0;
