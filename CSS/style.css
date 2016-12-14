@@ -417,6 +417,10 @@ textarea {
     #logoContainer {
         margin-top: 2.5%;
     }
+    .logo img {
+        top: -10%;
+        left: -5%;
+    }
 }
 
 @media (max-width: 62rem) {
