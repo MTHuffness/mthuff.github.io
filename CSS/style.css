@@ -11,6 +11,36 @@ body {
     rgba(0, 0, 0, 1) 100%) black;
     animation: sideColor 30s linear infinite;
 }
+@-webkit-keyframes sideColor {
+    50% {
+    -webkit-background: linear-gradient(to right, 
+    rgba(127, 0, 255, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(127, 0, 255, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;     
+    }   
+}
+@-o-keyframes sideColor {
+    50% {
+    -o-background: linear-gradient(to right, 
+    rgba(127, 0, 255, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(127, 0, 255, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;     
+    }   
+}
+@-moz-keyframes sideColor {
+    50% {
+    -moz-background: linear-gradient(to right, 
+    rgba(127, 0, 255, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(127, 0, 255, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;     
+    }   
+}
 @keyframes sideColor {
     50% {
     background: linear-gradient(to right, 
