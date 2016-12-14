@@ -376,18 +376,17 @@ textarea {
         margin-left: 40%;
     }
 }
-
+/*IPAD DIMENSIONS (LANDSCAPE)*/
 @media (max-width: 65rem) {
     header {
         margin-left: -1.1%;
-        width: 85%;
+        width: 81.5%;
     }
     #logoContainer {
         margin-top: 2.85%;
     }
 }
 
-/*IPAD DIMENSIONS (LANDSCAPE)*/
 @media (max-width: 62rem) {
     #primary {
         flex-wrap: wrap;
