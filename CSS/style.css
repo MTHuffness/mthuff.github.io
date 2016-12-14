@@ -132,6 +132,16 @@ nav {
             transform: rotate(45deg) scale(1.1);
         }
     }
+    @keyframes ipadSlide {
+        0% {
+            opacity: 0;
+            transform: rotate(0deg) translateY(-400px);
+        }
+        50% {
+            opacity: .5;
+            transform: rotate(0deg) scale(1.1);
+        }
+    }
     .logo:hover {
         transform: rotateY(180deg) rotate(0deg) scale(.8) translate(50%, -15%);
     }
@@ -380,10 +390,13 @@ textarea {
 @media (max-width: 65rem) {
     header {
         margin-left: -1.1%;
-        width: 81%;
+        width: 80.75%;
     }
     #logoContainer {
         margin-top: 2.5%;
+    }
+    .logo .backLogo {
+        animation: ipadSlide 2s linear;
     }
 }
 
