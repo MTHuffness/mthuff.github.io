@@ -3,6 +3,24 @@ body {
     color: silver;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     height: 540px;
+    -webkit-background: linear-gradient(to right, 
+    rgba(0, 100, 100, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 100, 100, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;
+    -o-background: linear-gradient(to right, 
+    rgba(0, 100, 100, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 100, 100, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;
+    -moz-background: linear-gradient(to right, 
+    rgba(0, 100, 100, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 100, 100, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;
     background: linear-gradient(to right, 
     rgba(0, 100, 100, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
