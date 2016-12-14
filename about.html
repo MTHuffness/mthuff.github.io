@@ -5,20 +5,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width", maximum-scale="5">
             <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Welcome to MTHuff Design!</title>
         <link rel="stylesheet" href="CSS/style.css"/>
-        <script src="http://code.jquery.com/jquery-3.1.1.min.js" 
+        <!--<script src="http://code.jquery.com/jquery-3.1.1.min.js" 
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
         crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
-        <script type="text/javascript" src="js/index.js"></script>  
+        <script type="text/javascript" src="js/index.js"></script>-->
     </head>
 
     <body>
+        <div id="container">
         <header>
-            <img class="smallLogo" src="images/logoSilver.png">
+            <!--<img class="smallLogo" src="images/logoSilver.png">-->
         </header>
 <!--NAVIGATION LINK STRUCTURE------------------------------------------------------------------>
         <nav>
@@ -43,38 +44,51 @@
             </figure>
         </div>
 <!--TITLE PLACEMENT-------------------------------------------------------------------------->
-        <section id="title">
-            <h1 class="colorCascade">About MTHuff Design</h1>
+        <section id="title" >
+            <h1 class="colorCascade">MTHuff Design LLC</h1>
         </section>
 <!--MAIN SECTION CONTAINING ALL CENTRALIZED CONTENT---------------------------------------->
         <main id="primary">
             <figure>
-                <img src="images/wall.jpg" alt="under construction">
+                <img src="images/denver.jpg">
             </figure>
-        </main>
-
+            <article id="mainSummary">
+                <p>
+                    MTHuff Design LLC has one goal in mind, shifting the paradigm in web design. Using the 
+                    lastest coding technology in HTML, CSS, and JavaScript, I will aim to deliver a unique
+                    and interactive experience to your clientele with unbelievable animations and modernized 
+                    simplicity. Creating a consise and efficient website will not only ensure your user base
+                    will find what they need as soon as possible, but also will enjoy the adventure as well.
+                    <br><br><br>
+                    <span class="bold">Mike Huffman<span>
+                    <br>
+                    Head Developer
+                </p>
+            </article>
 <!--SIDE BAR SECTION SITTING TO THE RIGHT OF THE MAIN PAGE---------------------------------->
-        <aside id="sideBar">
-            <h1 class="headService">Services</h1>
-            <ul>
-                <li class="subService">Static Website Services</li>
+            <aside id="sideBar">
+                <h1 class="headService">Services</h1>
                 <ul>
-                    <li class="subService">HTML</li>
-                    <li class="subService">CSS</li>
-                    <li class="subService">JavaScript/ jQuery</li>
+                    <li class="subService">Static Website Services</li>
+                    <ul>
+                        <li class="subService">HTML</li>
+                        <li class="subService">CSS</li>
+                        <li class="subService">JavaScript/ jQuery</li>
+                    </ul>
                 </ul>
-            </ul>
-            <h1 class="headService">Contact</h1>
-            <ul>
-                <li class="subService">Phone:</li>
-                <li class="subService">Email:</li>
-            </ul>
-        </aside>
+                <h1 class="headService">Contact</h1>
+                <ul>
+                    <li class="subService">Phone:</li>
+                    <li class="subService">Email:</li>
+                </ul>
+            </aside>
+        </main>
 
 <!--FOOTER SECTION-------------------------------------------------------------------------->
         <footer>
             <p>MTHuff Designs LLC</p>
         </footer>
+        </div>
     </body>
 
 </html>
