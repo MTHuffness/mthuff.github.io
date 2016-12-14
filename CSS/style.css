@@ -340,6 +340,11 @@ textarea {
     color: white;
 }
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
+@media (min-width: 110rem) {
+    #logoContainer {
+        margin-top: -.5%;
+    }    
+}
 @media (max-width: 93rem) {
     #logoContainer {
         margin-top: .5%;
@@ -355,8 +360,14 @@ textarea {
         margin-top: .9%;
     }
     .logo img {
-        transform: rotate(0deg) scale(.9) translate(5%, -10%);
-        -webkit-transform: rotate(0deg) scale(.9) translate(5%, -10%);
+        transform: rotate(0deg) scale(.9);
+        -webkit-transform: rotate(0deg) scale(.9);
+        width: 90%;
+        top: -35%;
+        left: 0;
+    }
+    .logo .backLogo {
+        animation: ipadSlide 2s linear;
     }
     #contactPrimary {
         margin-left: 23.3%;
@@ -405,9 +416,6 @@ textarea {
     }
     #logoContainer {
         margin-top: 2.5%;
-    }
-    .logo .backLogo {
-        animation: ipadSlide 2s linear;
     }
 }
 
