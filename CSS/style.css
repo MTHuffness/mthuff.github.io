@@ -380,10 +380,10 @@ textarea {
 @media (max-width: 65rem) {
     header {
         margin-left: -1.1%;
-        width: 81.1%;
+        width: 81%;
     }
     #logoContainer {
-        margin-top: 2.7%;
+        margin-top: 2.5%;
     }
 }
 
