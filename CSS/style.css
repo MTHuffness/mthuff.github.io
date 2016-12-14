@@ -56,6 +56,7 @@ body {
 }
 #container {
     width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
     background: linear-gradient(0deg, rgba(0, 200, 200, .4) 0%,
     rgba(0, 0, 0, 1) 95%);
@@ -214,10 +215,17 @@ nav {
     margin-right: 200px;
     flex: 3 2 auto;
     align-self: center;
-
+    animation: pop 2s linear;
 }
     #mainSummary p {
         font-size: 1.2rem;
+    }
+    #mainSummary p:first-letter {
+        font-size: 4rem;
+        color: rgba(0, 40, 150, 1);
+        float: left;
+        padding: .2rem;
+        margin-top: .6rem;
     }
 #title {
     text-align: center;
@@ -227,6 +235,20 @@ nav {
     margin: -4.5% auto 0;
     letter-spacing: 15px;
     margin-bottom: -.1%;
+}
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+    25% {
+        opacity: .5;
+        transform: translateX(-200px);
+    }
+    70% {
+        opacity: .75;
+        transform: translateX(200px);
+    }
 }
 /*MY FIRST ATTEMPT AT A TRIANGLE ABOVE THE TITLE
 #title:before {
