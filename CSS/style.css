@@ -4,21 +4,21 @@ body {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     height: 540px;
     background: linear-gradient(to right, 
-    rgba(0, 100, 100, 1) 0%,
+    rgba(0, 100, 100, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
     rgba(0, 0, 0, 1) 95%,
-    rgba(0, 100, 100, 1) 100%,
-    rgba(0, 0, 0, 1) 100%);
+    rgba(0, 100, 100, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;
     animation: sideColor 30s linear infinite;
 }
 @keyframes sideColor {
     50% {
     background: linear-gradient(to right, 
-    rgba(127, 0, 255, 1) 0%,
+    rgba(127, 0, 255, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
     rgba(0, 0, 0, 1) 95%,
-    rgba(127, 0, 255, 1) 100%,
-    rgba(0, 0, 0, 1) 100%);     
+    rgba(127, 0, 255, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;     
     }
 }
 #container {
