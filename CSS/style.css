@@ -396,6 +396,7 @@ textarea {
         margin-top: 2.5%;
     }
     .logo .backLogo {
+        transform: rotate(0deg) scale(.9) translate(5%, -10%);
         animation: ipadSlide 2s linear;
     }
 }
