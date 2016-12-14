@@ -1,11 +1,22 @@
 body {
     margin: 0;
-    background: linear-gradient(0deg, rgba(0, 200, 200, .4) 0%,
-    rgba(0, 0, 0, 1) 95%), black;
     color: silver;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     height: 540px;
-    overflow-x: hidden;
+    background: linear-gradient(to right, 
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 100, 100, 1) 10%,
+    rgba(0, 100, 100, 1) 90%,
+    rgba(0, 0, 0, 1) 100%);
+}
+#container {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(0deg, rgba(0, 200, 200, .4) 0%,
+    rgba(0, 0, 0, 1) 95%);
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
 }
 header {
     width: 84%;
@@ -56,10 +67,10 @@ nav {
 /*LOGO STYLING----------------------------------------------------------------------------------*/
 #logoContainer {
     width: 16%;
-    height: 40%;
+    height: 45%;
     position: relative;
     left: 84%;
-    top: -13.7%;
+    top: -13.8%;
     border-left: 1px solid silver;
     border-bottom: 1px solid silver;
     box-sizing: border-box;
@@ -85,7 +96,6 @@ nav {
         -webkit-backface-visibility: hidden;
         -o-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
-        top: -13%;
         left: -19%;
         transform: rotate(45deg) scale(.9);
         -webkit-transform: rotate(45deg) scale(.9);
@@ -116,21 +126,22 @@ nav {
     -webkit-transform: scale(7, .5) rotate(-90deg);
     -o-transform: scale(7, .5) rotate(-90deg);
     -moz-transform: scale(7, .5) rotate(-90deg);
-    margin-top: -7%;
-    margin-left: 40%;
+    margin-top: -8%;
+    margin-left: 70%;
 }
 
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
 #primary {
-    width: 99%;
-    margin: 0 auto .7%;
-    box-sizing: border-box;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
     background: url(../images/denver.jpg);
     background-size: 100% 100%;
     filter: hue-rotate(310deg);
-    padding: 2%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    border: 1px solid silver;
+    margin-bottom: 4%;
 }
 #mainSummary {
     background: rgba(0, 0, 0, .8);
@@ -141,8 +152,10 @@ nav {
     font-weight: bold;
     word-spacing: 2px;
     line-height: 30px;
-    width: 500px;
-    margin-left: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    flex: 3 2 auto;
+    align-self: center;
 
 }
     #mainSummary p {
@@ -153,8 +166,8 @@ nav {
     text-transform: uppercase;
     border: 1px solid silver;
     width: 40%;
-    margin-left: 39.85%;
-    margin-top: -5%;
+    margin-left: 35%;
+    margin-top: -4.5%;
     letter-spacing: 15px;
 }
 /*MY FIRST ATTEMPT AT A TRIANGLE ABOVE THE TITLE
@@ -173,7 +186,7 @@ aside {
     border: 1px solid silver;
     box-shadow: 0 0 30px black;
     box-sizing: border-box;
-    width: 200px;
+    width: 420px;
 }
 .headService {
     text-align: center;
@@ -319,33 +332,11 @@ textarea {
 }
 
 @media (max-width: 89rem) {
-    #primary {
-        width: 70%;
-        margin: 0 3.33% 5%;
-    }
-    #sideBar {
-        width: 20%;
-        margin-right: 3.33%;
-    }
-    #title {
-        margin-left: 33.2%;
-    }
-    #primary figure {
-        float: none;
-        width: 90%;
-        margin: 2% auto;
-    }
     #logoContainer {
         margin-top: .9%;
     }
     .logo img {
         transform: rotate(0deg) scale(.9) translate(5%, -10%);
-    }
-    #primary article p {
-        margin: 5%;
-    }
-    #title h1 {
-        letter-spacing: 10px;
     }
     #contactPrimary {
         margin-left: 23.3%;
@@ -356,16 +347,10 @@ textarea {
         margin-top: -9%;
         margin-left: 40%;
     }
-    #mainSummary {
-        width: 55%;
-    }
 }
 @media (max-width: 83rem) {
     #logo {
         margin-top: 1.1%;
-    }
-    #mainSummary {
-        width: 70%;
     }
 }
 
@@ -384,9 +369,6 @@ textarea {
         margin-top: -12%;
         margin-left: 40%;
     }
-    #mainSummary {
-        width: 80%;
-    }
 }
 
 @media (max-width: 65rem) {
@@ -401,26 +383,6 @@ textarea {
 
 /*IPAD DIMENSIONS (LANDSCAPE)*/
 @media (max-width: 60rem) {
-    #sideBar {
-        margin-right: 2.5%;
-        margin-left: 0;
-        width: 30%;
-    }
-    #primary {
-        margin-left: 2.5%;
-        margin-right: 0;
-        width: 65%;
-    }
-    #title {
-        margin-left: 27.4%;
-    }
-    #title h1 {
-        letter-spacing: 3px;
-    }
-    #contactPrimary {
-        margin-left: 10%;
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 58rem) {
@@ -447,27 +409,9 @@ textarea {
     .smallLogo {
         display: none;
     }
-    #mainSummary p {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 26rem) {
-    #primary {
-        width: 90%; 
-        margin: 2% 5%;
-        float: none;
-    }
-    #title {
-        width: 95%;
-        margin-left: 2.5%;   
-    }
-    #sideBar {
-        clear: both;
-        float: none;
-        width: 70%;
-        margin: 0 15% 5%; 
-    }
     #logoContainer {
         margin-top: -26%;
         margin-left: -30%;
@@ -480,9 +424,5 @@ textarea {
     }
     .figure {
         display: none;
-    }
-    #mainSummary {
-        width: 90%;
-        margin: 2% 5%;
     }
 }
