@@ -5,20 +5,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width", maximum-scale="5">
             <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Welcome to MTHuff Design!</title>
         <link rel="stylesheet" href="CSS/style.css"/>
-        <script src="http://code.jquery.com/jquery-3.1.1.min.js" 
+        <!--<script src="http://code.jquery.com/jquery-3.1.1.min.js" 
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
         crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/jquery-ui.min.js"></script>  
-        <script type="text/javascript" src="js/index.js"></script>  
+        <script type="text/javascript" src="js/index.js"></script>-->
     </head>
 
     <body>
+        <div id="container">
         <header>
-            <img class="smallLogo" src="images/logoSilver.png">
+            <!--<img class="smallLogo" src="images/logoSilver.png">-->
         </header>
 <!--NAVIGATION LINK STRUCTURE------------------------------------------------------------------>
         <nav>
@@ -43,64 +44,77 @@
             </figure>
         </div>
 <!--TITLE PLACEMENT-------------------------------------------------------------------------->
-        <section id="title">
-            <h1 class="colorCascade">Contact MTHuff Design</h1>
+        <section id="title" >
+            <h1 class="colorCascade">MTHuff Design LLC</h1>
         </section>
-<!--MAIN SECTION CONTAINING FORM CONTENT---------------------------------------->
+<!--MAIN SECTION CONTAINING ALL CENTRALIZED CONTENT---------------------------------------->
         <main id="primary">
-            <div id="companyInfo">
-                <h2>MTHuff Design LLC</h2>
-                <h3>Owner/Developer</h3>
-                <p>Mike Huffman</p>
-                <br>
-                <h3>Contact Information</h3>
-                <h4>Email Address</h4>
-                <p>mthuffdesign@gmail.com</p>
-                <h4>Hours</h4>
-                <p>Monday- Friday - 9am-5pm</p>
-                <p>Please email to schedule consultation</p>
+            <figure>
+                <img src="images/denver.jpg">
+            </figure>
+            <div id="mainContact">
+                <div id="companyInfo">
+                    <h2>MTHuff Design LLC</h2>
+                    <h3>Owner/Developer</h3>
+                    <p>Mike Huffman</p>
+                    <br>
+                    <h3>Contact Information</h3>
+                    <h4>Email Address</h4>
+                    <p>mthuffdesign@gmail.com</p>
+                    <h4>Hours</h4>
+                    <p>Monday- Friday - 9am-5pm</p>
+                    <p>Please email to schedule consultation</p>
+                </div>
+                <div id="contactPrimary">
+                    <form>
+                            <label for="formName">Full Name:
+                                <input type="text" id="formName" class="formArea" required></label>
+                            </label>
+                            <label for="formName">Email Address:
+                                <input type="text" id="formName" class="formArea" required></label>
+                            </label>
+                            <label for="formName">Phone Number:
+                                <input type="tel" id="formName" class="formArea" required></label>
+                            </label>
+                            <label for="contactComment">Comments:
+                                <textarea id="contactComment" rows="5" cols="30" required></textarea>
+                            </label>
+                            <button class="contactButton" type="submit" name="submit" >Submit</button>
+                    </form>
+                </div>
             </div>
-            <div id="contactPrimary">
-                <form>
-                        <label for="formName">Full Name:
-                            <input type="text" id="formName" class="formArea" required></label>
-                        </label>
-                        <label for="formName">Email Address:
-                            <input type="text" id="formName" class="formArea" required></label>
-                        </label>
-                        <label for="formName">Phone Number:
-                            <input type="tel" id="formName" class="formArea" required></label>
-                        </label>
-                        <label for="contactComment">Comments:
-                            <textarea id="contactComment" rows="5" cols="30" required></textarea>
-                        </label>
-                        <button class="contactButton" type="submit" name="submit" >Submit</button>
-                </form>
-            </div>
-        </main>
-
 <!--SIDE BAR SECTION SITTING TO THE RIGHT OF THE MAIN PAGE---------------------------------->
-        <aside id="sideBar">
-            <h1 class="headService">Services</h1>
-            <ul>
-                <li class="subService">Static Website Services</li>
+            <aside id="sideBar">
+                <h1 class="headService">Services</h1>
                 <ul>
-                    <li class="subService">HTML</li>
-                    <li class="subService">CSS</li>
-                    <li class="subService">JavaScript/ jQuery</li>
+                    <li class="subService">Static Website Services</li>
+                        <ul>
+                            <li class="subService">HTML</li>
+                            <li class="subService">CSS</li>
+                            <li class="subService">JavaScript/ jQuery</li>
+                        </ul>
                 </ul>
-            </ul>
-            <h1 class="headService">Contact</h1>
-            <ul>
-                <li class="subService">Phone:</li>
-                <li class="subService">Email:</li>
-            </ul>
-        </aside>
+                <h1 class="headService">Specialty</h1>
+                <ul>
+                    <li class="subService">Animations</li>
+                        <ul>
+                            <li class="subService">2-step Transitions</li>
+                            <li class="subService">Fullscale Animations</li>
+                            <li class="subService">3D effects</li>
+                        </ul>
+                    <li class="subService">Logo Design</li>
+                    <li class="subService">Responsive Layouts</li>
+                    <li class="subService">Complex Backgrounds</li>
+                    <li class="subService">Interactive Web Pages</li>
+                </ul>
+            </aside>
+        </main>
 
 <!--FOOTER SECTION-------------------------------------------------------------------------->
         <footer>
             <p>MTHuff Designs LLC</p>
         </footer>
+        </div>
     </body>
 
 </html>

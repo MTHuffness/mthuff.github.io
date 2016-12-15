@@ -4,11 +4,12 @@
 
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width", maximum-scale="5">
             <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Welcome to MTHuff Design!</title>
-        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 26rem)" href="CSS/mobilestyle.css" />
         <!--<script src="http://code.jquery.com/jquery-3.1.1.min.js" 
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" 
         crossorigin="anonymous"></script>
@@ -52,34 +53,68 @@
             <figure>
                 <img src="images/denver.jpg">
             </figure>
-            <article id="mainSummary">
-                <p>
-                    MTHuff Design LLC has one goal in mind, shifting the paradigm in web design. Using the 
-                    lastest coding technology in HTML, CSS, and JavaScript, I will aim to deliver a unique
-                    and interactive experience to your clientele with unbelievable animations and modernized 
-                    simplicity. Creating a consise and efficient website will not only ensure your user base
-                    will find what they need as soon as possible, but also will enjoy the adventure as well.
-                    <br><br><br>
-                    <span class="bold">Mike Huffman<span>
-                    <br>
-                    Head Developer
-                </p>
+            <article id="tabs">
+
+                    <input checked id="aboutCompany" name="tabs" type="radio">
+                    <label class="contactTabs" for="aboutCompany">About MTHuff Design</label>
+
+                    <input id="aboutMe" name="tabs" type="radio">
+                    <label  class="contactTabs" for="aboutMe">About Mike Huffman</label>
+
+                    <div class="panels">
+
+                        <div class="panel">
+                            <p>
+                                MTHuff Design LLC has one goal in mind, shifting the paradigm in web design. Using the 
+                                lastest coding technology in HTML, CSS, and JavaScript, I will aim to deliver a unique
+                                and interactive experience to your clientele with unbelievable animations and modernized 
+                                simplicity. Creating a consise and efficient website will not only ensure your user base
+                                will find what they need as soon as possible, but also will enjoy the adventure as well.
+                                <br><br><br>
+                                <span class="bold">Mike Huffman<span>
+                                <br>
+                                Head Developer
+                            </p>
+                        </div>
+
+                        <div class="panel">
+                            <p>
+                                MIke Huffman has one goal in mind, shifting the paradigm in web design. Using the 
+                                lastest coding technology in HTML, CSS, and JavaScript, I will aim to deliver a unique
+                                and interactive experience to your clientele with unbelievable animations and modernized 
+                                simplicity. Creating a consise and efficient website will not only ensure your user base
+                                will find what they need as soon as possible, but also will enjoy the adventure as well.
+                                <br><br><br>
+                                <span class="bold">Mike Huffman<span>
+                                <br>
+                                Head Developer
+                            </p>
+                        </div>
+                    </div>
             </article>
 <!--SIDE BAR SECTION SITTING TO THE RIGHT OF THE MAIN PAGE---------------------------------->
             <aside id="sideBar">
                 <h1 class="headService">Services</h1>
                 <ul>
                     <li class="subService">Static Website Services</li>
-                    <ul>
-                        <li class="subService">HTML</li>
-                        <li class="subService">CSS</li>
-                        <li class="subService">JavaScript/ jQuery</li>
-                    </ul>
+                        <ul>
+                            <li class="subService">HTML</li>
+                            <li class="subService">CSS</li>
+                            <li class="subService">JavaScript/ jQuery</li>
+                        </ul>
                 </ul>
-                <h1 class="headService">Contact</h1>
+                <h1 class="headService">Specialty</h1>
                 <ul>
-                    <li class="subService">Phone:</li>
-                    <li class="subService">Email:</li>
+                    <li class="subService">Animations</li>
+                        <ul>
+                            <li class="subService">2-step Transitions</li>
+                            <li class="subService">Fullscale Animations</li>
+                            <li class="subService">3D effects</li>
+                        </ul>
+                    <li class="subService">Logo Design</li>
+                    <li class="subService">Responsive Layouts</li>
+                    <li class="subService">Complex Backgrounds</li>
+                    <li class="subService">Interactive Web Pages</li>
                 </ul>
             </aside>
         </main>

@@ -157,7 +157,7 @@ nav {
 }
     .logo img {
         position: absolute;
-        left: -9%;
+        left: -12%;
         top: -6%;
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
@@ -229,11 +229,11 @@ nav {
     font-weight: bold;
     word-spacing: 2px;
     line-height: 30px;
-    margin-left: 200px;
-    margin-right: 200px;
-    flex: 3 2 auto;
+    margin: 0 200px;
+    width: 85%;
     align-self: center;
     animation: pop 2s 2s backwards;
+    box-sizing: border-box;
 }
     #mainSummary p {
         font-size: 1.2rem;
@@ -286,13 +286,16 @@ aside {
     border-left: 1px solid silver;
     box-shadow: 0 0 30px black;
     box-sizing: border-box;
-    width: 420px;
+    width: 35%;
 }
 .headService {
     text-align: center;
     border-bottom: 1px solid silver;
     font-size: 2rem;
 }
+    #sideBar ul li {
+        line-height: 22px;
+    }
 /*COLOR CASCADE INFITE LOOP!!!-------------------------------------------------------------------*/
 .colorCascade {
     color: rgba(0, 100, 100, .8);
@@ -323,24 +326,92 @@ footer {
 
 
 /*ABOUT PAGE STYLING-------------------------------------------------------------------------*/   
-
+#tabs {
+    width: 85%;
+    margin: 0 200px;
+    align-self: center;
+    animation: pop 2s 2s backwards;
+    padding: 1% 2%;
+    box-sizing: border-box;
+}
+input[name="tabs"] {
+    display: inline;
+    opacity: 0;
+}
+    input:checked + label {
+        background: rgba(0, 0, 0, .8);
+        color: silver;
+    }
+.contactTabs {
+    box-sizing: border-box;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 40, 150, 1), rgba(100, 100, 100, .5));
+    color: black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    float: left;
+    margin-right: 2px;
+    font-style: italic;
+    padding: 1.5% 3%;
+}
+    .contactTabs:hover {
+        color: silver;
+        transform: scale(1.01);
+    }
+.panel {
+    position: absolute;
+    width: 95%;
+    opacity: 0;
+    padding: 2%;
+    font-weight: bold;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+#tabs input:nth-of-type(1):checked ~ .panels .panel:nth-child(1), 
+#tabs input:nth-of-type(2):checked ~ .panels .panel:nth-child(2) {
+    opacity: 1;
+    transition: 1s;
+}
+.panels {
+    float: left;
+    clear: both;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    background: rgba(0, 0, 0, .8);
+    border: 1px solid silver;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 0 0 30px black;
+}
 
 /*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
+#mainContact {
+    width: 120%;
+    margin-right: 10%;
+    animation: pop 2s 2s backwards;
+    box-sizing: border-box;
+    align-self: stretch;
+    display: flex;
+}
 #companyInfo {
     float: left;
-    width: 30%;
+    width: 35%;
     height: auto;
-    margin: .5% 5%;
     box-sizing: border-box;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, .8);
+    border: 1px solid silver;
 }
 #contactPrimary {
     float: left;
-    width: 55%;
+    width: 60%;
     height: auto;
     box-sizing: border-box;
     border: 1px solid silver;
-    margin: 2% 0;
+    margin-left: 5%;
+    background: rgba(0, 0, 0, .8);
+    border: 1px solid silver;
+    align-self: center;
 }
 .contactButton {
     margin: 5% 10% 1%;
@@ -349,7 +420,7 @@ footer {
     text-orientation: upright;
     font-size: 2rem;
     color: silver;
-    background: radial-gradient(120% 120%, rgba(0, 100, 100, .5) 10%, rgba(0, 0, 0, 1) 70%);
+    background: radial-gradient(120% 120%, rgba(0, 40, 150, .5) 10%, rgba(0, 0, 0, 1) 70%);
     border: 1px solid silver;
     cursor: pointer;
 }
@@ -376,7 +447,7 @@ input, textarea {
     width: 100%;
     margin-bottom: 1%;
     height: 30px;
-    background: rgba(0, 100, 100, .5);
+    background: rgba(0, 40, 150, .5);
     border: none;
     transition: 2s;
     font-size: 1.4rem;
@@ -384,7 +455,7 @@ input, textarea {
 textarea {
     width: 100%;
     border: none;
-    background: rgba(0, 100, 100, .5);
+    background: rgba(0, 40, 150, .5);
     transition: 2s;
     font-size: 1.4rem;
 }
@@ -523,7 +594,7 @@ textarea {
         width: 80%;
     }
 }
-
+/*
 @media (max-width: 26rem) {
     #logoContainer {
         margin-top: -40%;
@@ -551,4 +622,4 @@ textarea {
     #title h1 {
         font-size: 1rem;
     }
-}
+}*/
