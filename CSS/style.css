@@ -2,7 +2,7 @@ body {
     margin: 0;
     color: silver;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    height: 540px;
+    height: 760px;
     -webkit-background: linear-gradient(to right, 
     rgba(0, 100, 100, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
@@ -83,20 +83,30 @@ body {
     box-sizing: border-box;
 }
 header {
-    margin-left: -.55%;
-    width: 80.45%;
-    height: 20%;
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
-    transform: rotate(-6deg);
-    -webkit-transform: rotate(-6deg);
-    -o-transform: rotate(-6deg);
-    -moz-transform: rotate(-6deg);
+    height: 35%;
 }
 /*NAVIGATION STYLING---------------------------------------------------------------------------*/
 nav {
-    transform: rotate(-6deg);
-    margin: 0;
+    float: left;
+    width: 80%;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-11.3deg);
+    -o-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    margin-top: 8%;
+    box-sizing: border-box;
 }
+    nav:before, nav:after {
+        display: block;
+        margin-bottom: 1%;
+        content: "";
+        width: 105%;
+        height: 1px;
+        background: silver;
+    }
+    nav:after {
+        display: none;
+    }
 .link, .linkCurrent {
     float: left;
     border-right: 1px solid silver;
@@ -120,7 +130,18 @@ nav {
     filter: brightness(1.2);
     transform: translate(0, -2px);
 }
-
+#menu img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.5);
+}
+#menu {
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
 /*CURRENT PAGE LINK STYLING---------------------------------------------------------------------*/
 .linkCurrent a {
     color: rgba(0, 100, 100, 1);
@@ -131,11 +152,10 @@ nav {
 
 /*LOGO STYLING----------------------------------------------------------------------------------*/
 #logoContainer {
+    float: right;
     width: 20%;
-    height: 45%;
+    height: 100%;
     position: relative;
-    left: 80%;
-    top: -11.55%;
     border-left: 1px solid silver;
     border-bottom: 1px solid silver;
     box-sizing: border-box;
@@ -151,14 +171,13 @@ nav {
     -o-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transition: 2s;
-    position: absolute;
+    position: relative;
+    margin: 0;
     width: 100%;
     height: 100%;
 }
     .logo img {
         position: absolute;
-        left: -12%;
-        top: -6%;
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         -o-backface-visibility: hidden;
@@ -170,9 +189,14 @@ nav {
     }
     .logo .backLogo {
         animation: fadeDown 2s linear;
+        top: 10%;
+        max-width: 80%;
     }
     .logo .frontLogo {
         transform: rotateY(-180deg);
+        max-height: 100%;
+        max-width: 90%;
+        left: 5%;
     }
     @keyframes fadeDown {
         0% {
@@ -195,7 +219,7 @@ nav {
         }
     }
     .logo:hover {
-        transform: rotateY(180deg) rotate(0deg) scale(.8) translate(50%, -15%);
+        transform: rotateY(180deg) rotate(0deg) scale(.9);
     }
 .smallLogo {
     transform: scale(7, .5) rotate(-90deg);
@@ -208,14 +232,12 @@ nav {
 
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
 #primary {
-    height: 500px;
+    min-height: 500px;
     width: 100%;
-    margin: 0 auto;
     background: url(../images/denver.jpg);
     background-size: 100% 100%;
     filter: hue-rotate(310deg);
     display: flex;
-    justify-content: space-between;
     border-top: 1px solid silver;
     border-bottom: 1px solid silver;
     margin-bottom: 5%;
@@ -233,7 +255,6 @@ nav {
     width: 85%;
     align-self: center;
     animation: pop 2s 2s backwards;
-    box-sizing: border-box;
 }
     #mainSummary p {
         font-size: 1.2rem;
@@ -250,7 +271,7 @@ nav {
     text-transform: uppercase;
     border: 1px solid silver;
     width: 40%;
-    margin: -4.5% auto 0;
+    margin: 0 auto;
     letter-spacing: 15px;
     margin-bottom: -.1%;
 }
@@ -277,15 +298,13 @@ nav {
 }
 #primary figure img {
     width: 100%;
-    height: 90%;
-    filter: hue-rotate(310deg);
+    height: 95%;
 }
 /*SIDEBAR STYLING--------------------------------------------------------------------------------*/
 aside {
     background: rgba(0, 0, 0, .8);
     border-left: 1px solid silver;
     box-shadow: 0 0 30px black;
-    box-sizing: border-box;
     width: 35%;
 }
 .headService {
@@ -377,7 +396,7 @@ input[name="tabs"] {
     clear: both;
     position: relative;
     width: 100%;
-    min-height: 350px;
+    height: 400px;
     background: rgba(0, 0, 0, .8);
     border-bottom: 1px solid silver;
     border-left: 1px solid silver;
@@ -404,11 +423,11 @@ input[name="tabs"] {
 }
 #contactPrimary {
     float: left;
-    width: 55%;
+    width: 70%;
     height: auto;
     box-sizing: border-box;
     border: 1px solid silver;
-    margin: 0 20%;
+    margin: 0 10%;
     background: rgba(0, 0, 0, .8);
     border: 1px solid silver;
     align-self: center;
@@ -464,162 +483,199 @@ textarea {
     border: 1px solid silver;
     color: white;
 }
-/*MEDIA QUERIES--------------------------------------------------------------------------------*/
-@media (min-width: 110rem) {
-    #logoContainer {
-        margin-top: -.5%;
-    }    
-}
-@media (max-width: 93rem) {
-    #logoContainer {
-        margin-top: .5%;
-    }
-    .logo img {
-        margin-left: -10%;
-        margin-top: 5%;
-    }
-}
 
-@media (max-width: 89rem) {
-    #logoContainer {
-        margin-top: .9%;
-    }
+/*MEDIA QUERIES--------------------------------------------------------------------------------*/
+@media (max-width:89rem) {
     .logo img {
-        -webkit-transform: rotate(0deg) scale(.9);
-        -o-transform: rotate(0deg) scale(.9);
-        -moz-transform: rotate(0deg) scale(.9);
-        transform: rotate(0deg) scale(.9);
-        width: 90%;
-        top: -35%;
-        left: 0;
+        transform: rotate(0deg);
+        max-height: 95%;
+        max-width: 90%;
+        left: 10%;
+        margin-top: -5%;
     }
-    .logo .backLogo {
-        animation: ipadSlide 2s linear;
-    }
-    #contactPrimary {
-        margin-left: 23.3%;
-        margin-right: 2.5%;
-    }
-    .smallLogo {
-        transform: scale(6, .5) rotate(-90deg);
-        margin-top: -9%;
-        margin-left: 40%;
+    #mainSummary {
+        margin: 0 100px;
     }
     #title {
         width: 50%;
+        margin-left: 10%;
     }
-    #mainSummary {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-}
-@media (max-width: 83rem) {
-    #logo {
-        margin-top: 1.1%;
+    #tabs {
+        margin: 0 100px;
     }
 }
-
-@media (max-width: 74rem) {
-    #logoContainer {
-        margin-top: 2%;
-    }
-    #title h1 {
-        letter-spacing: 5px;
-    }
-    .logo img {
-        width: 90%;
-    }
-    .smallLogo {
-        transform: scale(5, .5) rotate(-90deg);
-        margin-top: -12%;
-        margin-left: 40%;
-    }
-}
-/*IPAD DIMENSIONS (LANDSCAPE)*/
-@media (max-width: 65rem) {
-    header {
-        margin-left: -1.1%;
-        width: 80.75%;
-    }
-    #logoContainer {
-        margin-top: 2.5%;
-    }
-    .logo img {
-        top: -10%;
-        left: -5%;
-    }
-}
-
-@media (max-width: 62rem) {
-    #primary {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-between;
-        height: auto;
-    }
-    #mainSummary {
-        margin: 0 1px; 
-    }
-    #sideBar {
-        margin-top: 30px;
-        border: 1px solid silver;
-    }
-}
-
-@media (max-width: 58rem) {
-    header {
-        transform: rotate(0deg);
-        height: 5%;
-        width: 51%;
-    }
+@media (max-width: 75rem) {
     nav {
-        transform: rotate(0deg);
-        width: 50%;
+        width: 75%;
+        transform: rotate(-12deg);
     }
-    .link {
-        float: none;
-        margin: 0;
+    #logoContainer {
+        width: 25%;
+    }
+    .link a {
+        font-size: 2rem;
+    }
+    #title {
+        width: 60%;
+    }
+    #mainSummary {
+        margin: 0 50px;
+    }
+    body, #mainSummary p {
+        font-size: .9rem;
+    }
+    #tabs {
+        margin: 0 50px;
+    }
+}
+@media (max-width: 60rem) {
+    nav {
+        width: 70%;
+        transform: rotate(-12.9deg);
     }
     #logoContainer {
         width: 30%;
-        margin-top: -15%;
-        margin-left: -20%;
-        border: none;
-        background: transparent;    
+    }  
+    .link a {
+        font-size: 1.5rem;
     }
-    .smallLogo {
+    #title {
+        margin: 3% auto 0;
+        width: 60%;
+    }
+    #primary {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    #mainSummary, #tabs {
+        margin: 0 0 10px;
+    }
+    aside {
+        border: 1px solid silver;
+        width: 50%;
+    }
+    .contactTabs {
+        font-size: .9rem;
+    }
+    #contactPrimary {
+        margin: 0 0 0 10px;
+    }
+}
+@media (max-width: 50rem) {
+    nav {
+        transform: rotate(0deg);
+        margin: 0;
+        width: 60%;
+    }
+    nav:before {
         display: none;
+    }
+    nav:after {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    nav {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    #logoContainer {
+        width: 40.01%;
+        height: 80%;
+    }
+    .logo img {
+        margin-top: -25%;
+        max-height: 120%;
+        margin-left: 5%;
+    }
+    body, #mainSummary p {
+        font-size: .75rem;
     }
     #title {
         width: 80%;
     }
-}
-/*
-@media (max-width: 26rem) {
-    #logoContainer {
-        margin-top: -40%;
-        margin-left: -30%;
-        width: 50%;
+    #primary {
+        padding: 20px;
+    }
+    .panels {
+        border: 1px solid silver;
+    }
+    input:checked + label {
+        border: 1px solid silver;
+    }
+    #mainContact {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #companyInfo {
+        width: 80%;
+        margin: 0;
     }
     #contactPrimary {
-        display: block;
         width: 90%;
-        margin: 5%;
+        margin: 20px 0;
     }
-    .figure {
-        display: none;
+
+}
+@media (max-width: 42rem) {
+    #title {
+        width: 98%;
+    }
+    #mainSummary, #tabs {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    aside {
+        width: 75%;
     }
     #primary {
-        background: rgba(0, 0, 0, .25);
+        padding: 25px;
+        background: black;
     }
     #primary figure {
         display: block;
     }
-    #title {
-        width: 95%;
-        margin: 0 auto 1%;
+    .logo img {
+        left: 0;
     }
-    #title h1 {
-        font-size: 1rem;
+    .contactTabs {
+        font-size: .7rem;
     }
-}*/
+    .panels {
+        height: 405px;
+    }
+}
+@media (max-width: 30rem) {
+    nav {
+        width: 45%;
+    }
+    #logoContainer {
+        width: 55.01%;
+    }
+    #primary {
+        padding: 30px;
+    }
+    .panels {
+        height: 460px;
+    }
+    .contactTabs {
+        font-size: .6rem;
+    }
+    #companyInfo {
+        font-size: .9rem;
+    }
+    #contactPrimary, #companyInfo {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+}
+@media (max-width: 26rem) {
+
+}
