@@ -118,7 +118,7 @@ nav {
     0 0 40px rgba(255, 255, 255, .2),
     0 0 60px rgba(255, 255, 255, .10);
     filter: brightness(1.2);
-    transform: translate(0, 2px);
+    transform: translate(0, -2px);
 }
 
 /*CURRENT PAGE LINK STYLING---------------------------------------------------------------------*/
@@ -379,15 +379,15 @@ input[name="tabs"] {
     width: 100%;
     min-height: 350px;
     background: rgba(0, 0, 0, .8);
-    border: 1px solid silver;
+    border-bottom: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;    
     border-radius: 0 10px 10px 10px;
-    box-shadow: 0 0 30px black;
 }
 
 /*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
 #mainContact {
     width: 120%;
-    margin-right: 10%;
     animation: pop 2s 2s backwards;
     box-sizing: border-box;
     align-self: stretch;
@@ -404,11 +404,11 @@ input[name="tabs"] {
 }
 #contactPrimary {
     float: left;
-    width: 60%;
+    width: 55%;
     height: auto;
     box-sizing: border-box;
     border: 1px solid silver;
-    margin-left: 5%;
+    margin: 0 20%;
     background: rgba(0, 0, 0, .8);
     border: 1px solid silver;
     align-self: center;
@@ -437,7 +437,7 @@ form {
     padding: 4%;
 }
 label {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
 }
 input, textarea {
@@ -450,14 +450,14 @@ input, textarea {
     background: rgba(0, 40, 150, .5);
     border: none;
     transition: 2s;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 textarea {
     width: 100%;
     border: none;
     background: rgba(0, 40, 150, .5);
     transition: 2s;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 .formArea:focus, textarea:focus {
     background: black;
