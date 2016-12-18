@@ -140,6 +140,7 @@ nav {
     width: 90px;
     height: 50px;
     cursor: pointer;
+    display: none;
 }
 #menuClose {
     position: absolute;
@@ -515,6 +516,9 @@ textarea {
         max-width: 90%;
         left: 10%;
         margin-top: -5%;
+    }
+    .logo .backLogo {
+        animation: ipadSlide 2s linear;
     }
     #mainSummary {
         margin: 0 100px;
