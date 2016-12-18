@@ -206,7 +206,6 @@ nav {
         -webkit-backface-visibility: hidden;
         -o-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
-        transform: rotate(45deg) scale(.9);
         -webkit-transform: rotate(45deg) scale(.9);
         -o-transform: rotate(45deg) scale(.9);
         -moz-transform: rotate(45deg) scale(.9);
@@ -215,6 +214,7 @@ nav {
         animation: fadeDown 2s linear;
         top: 10%;
         max-width: 80%;
+        transform: rotate(45deg) scale(.9);
     }
     .logo .frontLogo {
         transform: rotateY(-180deg);
@@ -541,10 +541,10 @@ textarea {
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
 @media (max-width:89rem) {
     .logo img {
-        -webkit-transform: rotate(0deg);
+        /*-webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
-        transform: rotate(0deg);
+        transform: rotate(0deg);*/
         max-height: 95%;
         max-width: 90%;
         left: 10%;
@@ -552,6 +552,7 @@ textarea {
     }
     .logo .backLogo {
         animation: ipadSlide 2s linear;
+        transform: rotate(0deg) scale(.9);
     }
     #mainSummary {
         margin: 0 100px;
