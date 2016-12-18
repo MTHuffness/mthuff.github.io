@@ -232,6 +232,36 @@ nav {
             transform: rotate(45deg) scale(1.1);
         }
     }
+    @-webkit-keyframes ipadSlide {
+        0% {
+            opacity: 0;
+            transform: translateY(-400px);
+        }
+        50% {
+            opacity: .5;
+            transform: scale(1.1);
+        }
+    }
+    @-o-keyframes ipadSlide {
+        0% {
+            opacity: 0;
+            transform: translateY(-400px);
+        }
+        50% {
+            opacity: .5;
+            transform: scale(1.1);
+        }
+    }
+    @-moz-keyframes ipadSlide {
+        0% {
+            opacity: 0;
+            transform: translateY(-400px);
+        }
+        50% {
+            opacity: .5;
+            transform: scale(1.1);
+        }
+    }
     @keyframes ipadSlide {
         0% {
             opacity: 0;
