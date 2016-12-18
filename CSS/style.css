@@ -235,11 +235,11 @@ nav {
     @keyframes ipadSlide {
         0% {
             opacity: 0;
-            transform: rotate(0deg) translateY(-400px);
+            transform: translateY(-400px);
         }
         50% {
             opacity: .5;
-            transform: rotate(0deg) scale(1.1);
+            transform: scale(1.1);
         }
     }
     .logo:hover {
