@@ -511,6 +511,9 @@ textarea {
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
 @media (max-width:89rem) {
     .logo img {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
         transform: rotate(0deg);
         max-height: 95%;
         max-width: 90%;
@@ -518,7 +521,6 @@ textarea {
         margin-top: -5%;
     }
     .logo .backLogo {
-        transform: rotate(0deg);
         animation: ipadSlide 2s linear;
     }
     #mainSummary {
