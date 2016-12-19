@@ -10,10 +10,6 @@ body {
     rgba(0, 0, 0, 1) 95%,
     rgba(0, 100, 100, .5) 100%,
     rgba(0, 0, 0, 1) 100%) black;
-    /*-webkit-animation: sideColor 30s linear infinite;
-    -moz-animation: sideColor 30s linear infinite;
-    -o-animation: sideColor 30s linear infinite;
-    animation: sideColor 30s linear infinite;*/
 }
 body:before {
     content: "";
@@ -30,53 +26,11 @@ body:before {
     rgba(0, 0, 0, 1) 95%,
     rgba(127, 0, 255, .5) 100%,
     rgba(0, 0, 0, 1) 100%) black;
-    animation: opacity 3s infinite;
+    animation: opacity 15s infinite;
 }
 @keyframes opacity {
     50% {
         opacity: 1;
-    }
-}
-
-/*VENDOR PREFIX FOR SIDECOLOR ANIMATION (NOT WORKING) */
-@-webkit-keyframes sideColor {
-    50% {
-    background: linear-gradient(to right, 
-    rgba(127, 0, 255, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(127, 0, 255, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;     
-    }   
-}
-@-moz-keyframes sideColor {
-    50% {
-    background: linear-gradient(to right, 
-    rgba(127, 0, 255, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(127, 0, 255, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;     
-    }   
-}
-@-o-keyframes sideColor {
-    50% {
-    background: linear-gradient(to right, 
-    rgba(127, 0, 255, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(127, 0, 255, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;     
-    }   
-}
-@keyframes sideColor {
-    50% {
-    background: linear-gradient(to right, 
-    rgba(127, 0, 255, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(127, 0, 255, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;     
     }
 }
 #container {
