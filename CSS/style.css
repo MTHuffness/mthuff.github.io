@@ -3,13 +3,14 @@ body {
     color: silver;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     height: 760px;
-    /*VENDOR PREFIX FOR BACKGROUND GRADIENT*/
+    width: 100%;
     background: linear-gradient(to right, 
     rgba(0, 100, 100, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
     rgba(0, 0, 0, 1) 95%,
     rgba(0, 100, 100, .5) 100%,
     rgba(0, 0, 0, 1) 100%) black;
+    overflow-x: hidden;
 }
 body:before {
     content: "";
@@ -593,6 +594,9 @@ textarea {
     #contactPrimary {
         margin: 0 0 0 10px;
     }
+    body:before {
+        height: 160%;
+    }
 }
 @media (max-width: 50rem) {
     nav {
@@ -655,6 +659,9 @@ textarea {
         width: 90%;
         margin: 20px 0;
     }
+    body:before {
+        height: 200%;
+    }
 
 }
 @media (max-width: 42rem) {
@@ -709,6 +716,9 @@ textarea {
     }
     aside {
         width: 100%;
+    }
+    body:before {
+        height: 210%;
     }
 }
 @media (max-width: 26rem) {
