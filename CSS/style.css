@@ -3,6 +3,7 @@ body {
     color: silver;
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     height: 760px;
+    /*VENDOR PREFIX FOR BACKGROUND GRADIENT*/
     -webkit-background: linear-gradient(to right, 
     rgba(0, 100, 100, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
@@ -32,6 +33,8 @@ body {
     -o-animation: sideColor 30s linear infinite;
     animation: sideColor 30s linear infinite;
 }
+
+/*VENDOR PREFIX FOR SIDECOLOR ANIMATION (NOT WORKING) */
 @-webkit-keyframes sideColor {
     50% {
     background: linear-gradient(to right, 
@@ -202,19 +205,19 @@ nav {
 }
     .logo img {
         position: absolute;
-        backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         -o-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
         -webkit-transform: rotate(45deg) scale(.9);
         -o-transform: rotate(45deg) scale(.9);
         -moz-transform: rotate(45deg) scale(.9);
+        transform: rotate(45deg) scale(.9);
     }
     .logo .backLogo {
-        animation: fadeDown 2s linear;
         top: 10%;
         max-width: 80%;
-        transform: rotate(45deg) scale(.9);
+        animation: fadeDown 2s linear;
     }
     .logo .frontLogo {
         transform: rotateY(-180deg);
@@ -222,6 +225,7 @@ nav {
         max-width: 90%;
         left: 5%;
     }
+    /*ANIMATION FOR LOGO FADE DOWN*/
     @keyframes fadeDown {
         0% {
             opacity: 0;
@@ -232,6 +236,7 @@ nav {
             transform: rotate(45deg) scale(1.1);
         }
     }
+    /*VENDOR PREFIX FOR LOGO FADE DOWN (SMALL SIZE DISPLAY - NOT WORKING PROPERLY)*/
     @-webkit-keyframes ipadSlide {
         0% {
             opacity: 0;
@@ -541,18 +546,17 @@ textarea {
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
 @media (max-width:89rem) {
     .logo img {
-        /*-webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
-        transform: rotate(0deg);*/
+        transform: rotate(0deg);
         max-height: 95%;
         max-width: 90%;
         left: 10%;
         margin-top: -5%;
     }
     .logo .backLogo {
-        animation: ipadSlide 2s linear;
-        transform: rotate(0deg) scale(.9);
+        animation: none;
     }
     #mainSummary {
         margin: 0 100px;
