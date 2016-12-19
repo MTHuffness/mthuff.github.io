@@ -4,34 +4,38 @@ body {
 	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     height: 760px;
     /*VENDOR PREFIX FOR BACKGROUND GRADIENT*/
-    -webkit-background: linear-gradient(to right, 
-    rgba(0, 100, 100, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 100, 100, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;
-    -o-background: linear-gradient(to right, 
-    rgba(0, 100, 100, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 100, 100, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;
-    -moz-background: linear-gradient(to right, 
-    rgba(0, 100, 100, .5) 0%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 100, 100, .5) 100%,
-    rgba(0, 0, 0, 1) 100%) black;
     background: linear-gradient(to right, 
     rgba(0, 100, 100, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
     rgba(0, 0, 0, 1) 95%,
     rgba(0, 100, 100, .5) 100%,
     rgba(0, 0, 0, 1) 100%) black;
-    -webkit-animation: sideColor 30s linear infinite;
+    /*-webkit-animation: sideColor 30s linear infinite;
     -moz-animation: sideColor 30s linear infinite;
     -o-animation: sideColor 30s linear infinite;
-    animation: sideColor 30s linear infinite;
+    animation: sideColor 30s linear infinite;*/
+}
+body:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 120%; 
+    width: 100%;
+    top: 0; left: 0;
+    opacity: 0;
+    z-index: -100;
+    background: linear-gradient(to right, 
+    rgba(127, 0, 255, .5) 0%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(127, 0, 255, .5) 100%,
+    rgba(0, 0, 0, 1) 100%) black;
+    animation: opacity 3s infinite;
+}
+@keyframes opacity {
+    50% {
+        opacity: 1;
+    }
 }
 
 /*VENDOR PREFIX FOR SIDECOLOR ANIMATION (NOT WORKING) */
