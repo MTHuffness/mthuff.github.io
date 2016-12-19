@@ -187,16 +187,17 @@ nav {
     border-bottom: 1px solid silver;
     box-sizing: border-box;
     background: rgba(0, 0, 0, .25);
-    perspective: 800px;
     -webkit-perspective: 800px;
     -o-perspective: 800px;
     -moz-perspective: 800px;
+    perspective: 800px;
+
 }
 .logo {
-    transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     transition: 2s;
     position: relative;
     margin: 0;
@@ -217,6 +218,9 @@ nav {
     .logo .backLogo {
         top: 10%;
         max-width: 80%;
+        -webkit-animation: fadeDown 2s linear;
+        -o-animation: fadeDown 2s linear;
+        -moz-animation: fadeDown 2s linear;
         animation: fadeDown 2s linear;
     }
     .logo .frontLogo {
@@ -556,6 +560,9 @@ textarea {
         margin-top: -5%;
     }
     .logo .backLogo {
+        -webkit-animation: none;
+        -o-animation: none;
+        -moz-animation: none;
         animation: none;
     }
     #mainSummary {
