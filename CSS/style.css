@@ -199,37 +199,6 @@ nav {
             transform: rotate(45deg) scale(1.1);
         }
     }
-    /*VENDOR PREFIX FOR LOGO FADE DOWN (SMALL SIZE DISPLAY - NOT WORKING PROPERLY)*/
-    @-webkit-keyframes ipadSlide {
-        0% {
-            opacity: 0;
-            transform: translateY(-400px);
-        }
-        50% {
-            opacity: .5;
-            transform: scale(1.1);
-        }
-    }
-    @-o-keyframes ipadSlide {
-        0% {
-            opacity: 0;
-            transform: translateY(-400px);
-        }
-        50% {
-            opacity: .5;
-            transform: scale(1.1);
-        }
-    }
-    @-moz-keyframes ipadSlide {
-        0% {
-            opacity: 0;
-            transform: translateY(-400px);
-        }
-        50% {
-            opacity: .5;
-            transform: scale(1.1);
-        }
-    }
     @keyframes ipadSlide {
         0% {
             opacity: 0;
@@ -519,10 +488,10 @@ textarea {
         margin-top: -5%;
     }
     .logo .backLogo {
-        -webkit-animation: none;
-        -o-animation: none;
-        -moz-animation: none;
-        animation: none;
+        -webkit-animation: ipadSlide 3s linear;
+        -o-animation: ipadSlide 3s linear;
+        -moz-animation: ipadSlide 3s linear;
+        animation: ipadSlide 3s linear;
     }
     #mainSummary {
         margin: 0 100px;
