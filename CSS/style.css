@@ -258,7 +258,7 @@ header {
     height: 95%;
 }
 /*STYLING FOR RADIO BUTTON TRANSFORM*/
-#primary input {
+.homeInput {
     display: inline;
     position: absolute;
     left: -999px;
@@ -273,10 +273,10 @@ header {
     text-align: center;
     cursor: pointer;
 }
-    #primary input:checked + label {
+     .homeInput:checked + label {
         font-weight: bold;
     }
-    #primary label:hover {
+     .homeLabel:hover {
         background: silver;
         color: black;
     }
@@ -528,10 +528,10 @@ input[name="tabs"] {
     color: black;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    float: left;
-    margin-right: 2px;
     font-style: italic;
     padding: 1.5% 3%;
+    display: inline-block;
+    margin-left: -24px;
 }
     .contactTabs:hover {
         color: silver;
@@ -619,12 +619,8 @@ input[name="tabs"] {
 form {
     padding: 4%;
 }
-label {
+.contactLabel {
     font-size: 1.2rem;
-    
-}
-input, textarea {
-    display: block;
 }
 .formArea {
     width: 90%;
@@ -635,6 +631,8 @@ input, textarea {
     transition: 2s;
     font-size: 1.2rem;
     border-radius: 5px;
+    display: block;
+    position: relative;
 }
 textarea {
     width: 90%;
@@ -644,6 +642,7 @@ textarea {
     font-size: 1.2rem;
     margin: 0 auto;
     border-radius: 5px;
+    display: block;
 }
 .formArea:focus, textarea:focus {
     background: black;
