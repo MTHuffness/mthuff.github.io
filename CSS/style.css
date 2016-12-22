@@ -257,13 +257,46 @@ header {
     width: 100%;
     height: 95%;
 }
+/*STYLING FOR RADIO BUTTON TRANSFORM*/
+#primary input {
+    display: inline;
+    position: absolute;
+    left: -999px;
+}
+.homeLabel {
+    border: 1px solid silver;
+    position: relative;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+    #primary input:checked + label {
+        font-weight: bold;
+    }
+    #primary label:hover {
+        background: silver;
+        color: black;
+    }
+        input[value="1"]:checked ~  #triangle { 
+            transform: translateZ(-220px) rotateY(0deg); 
+        }
+        input[value="2"]:checked ~  #triangle { 
+            transform: translate(-80px, 15px) translateZ(-220px) rotateY(120deg); 
+        }
+        input[value="3"]:checked ~  #triangle { 
+            transform: translate(-70px, -15px) translateZ(-220px) rotateY(240deg); 
+        }
+
 /*STYLING FOR EACH TRIANGLE BOX*/
 #triangleHolder {
     margin-top: 5%;
     width: 920px;
     height: 500px;
-    perspective: 1000px;
-    perspective-origin: 100%;
+    perspective: 1200px;
+    perspective-origin: 50% 100%;
     margin-left: 100px;
     box-sizing: border-box;
     float: left;
@@ -272,12 +305,11 @@ header {
     transform-style: preserve-3d;
     width: 100%;
     height: 100%;
-    transform: translateZ(-200px);
+    transform: translateZ(-220px);
     position: relative;
     list-style: none;
     margin: 2.5% 0;
     transition: 1s;
-    animation: rotateSquare 50s 5s infinite;
 }
 #triangle li {
     border: 1px solid silver;
@@ -295,68 +327,19 @@ header {
         font-size: 1.5rem;
     }
     #triangle li:nth-child(1) {
-        transform: translateZ(200px);
-        background: rgba(0, 0, 0, 1);
+        transform: translateZ(220px);
+        background: rgba(0, 0, 0, .9);
     }
     #triangle li:nth-child(2) {
-        transform: rotateX(90deg) translateZ(200px);
+        transform: rotateY(120deg) translateZ(220px);
         background: rgba(0, 40, 150, .9);
         color: black;
     }
     #triangle li:nth-child(3) {
-        transform: rotateX(180deg) translateZ(200px);
-        background: rgba(0, 0, 0, 1);
-    }
-    #triangle li:nth-child(4) {
-        transform: rotateX(-90deg) translateZ(200px);
-        background: rgba(0, 40, 150, .9);
+        transform: rotateY(240deg) translateZ(220px);
+        background: rgba(100, 100, 100, .9);
         color: black;
     }
-@keyframes rotateSquare {
-    25% {
-        transform: translateY(-60px) translateZ(-200px) rotateX(90deg)
-    }
-    50% {
-        transform: translateY(-100px) translateZ(-200px) rotateX(180deg)
-    }
-    75% {
-        transform: translateZ(-200px) rotateX(270deg)
-    }
-}
-/*STYLING FOR PREV & FORWARD BUTTONS*/
-/*.arrow {
-    position: absolute;
-    top: 250px;
-    width: 0;
-    height: 0;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    text-indent: -9999px;
-    transition: .4s;
-    cursor: pointer;
-}
-
-.prev1, .prev2, .prev3, .prev4 {
-    left: 0;
-    margin-top: -15%;
-    margin-left: 2%;
-    border-right: 40px solid rgba(250, 250, 250, .5);
-}
-
-    .prev1:hover, .prev2:hover, .prev3:hover, .prev4:hover {
-        border-right: 45px solid rgba(250, 250, 250, 1);
-    }
-
-.next1, .next2, .next3, .next4 {
-    right: 0;
-    margin-top: -15%;
-    margin-right: 2%;
-    border-left: 40px solid rgba(250, 250, 250, .5);
-}
-
-    .next1:hover, .next2:hover, .next3:hover, .next4:hover {
-        border-left: 45px solid rgba(250, 250, 250, 1);
-    }*/
 
 /*SIDEBAR STYLING--------------------------------------------------------------------------------*/
 aside {
@@ -531,7 +514,7 @@ input[name="tabs"] {
     display: inline;
     opacity: 0;
 }
-    input:checked + label {
+    #tabs input:checked + label {
         background: rgba(0, 0, 0, .8);
         color: silver;
         border-top: 1px solid silver;
