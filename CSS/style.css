@@ -300,7 +300,8 @@ header {
     }
     #triangle li:nth-child(2) {
         transform: rotateX(90deg) translateZ(200px);
-        background: rgba(0, 40, 150, 1);
+        background: rgba(0, 40, 150, .9);
+        color: black;
     }
     #triangle li:nth-child(3) {
         transform: rotateX(180deg) translateZ(200px);
@@ -308,7 +309,8 @@ header {
     }
     #triangle li:nth-child(4) {
         transform: rotateX(-90deg) translateZ(200px);
-        background: rgba(0, 40, 150, 1);
+        background: rgba(0, 40, 150, .9);
+        color: black;
     }
 @keyframes rotateSquare {
     25% {
@@ -467,6 +469,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    transition: 1s;
 }
 #portfolioContainer article:target {
     width: 100%;
