@@ -222,42 +222,6 @@ nav {
 }
 
 /*MAIN STYLING-----------------------------------------------------------------------------------*/
-#primary {
-    min-height: auto;
-    padding: 1% 0;
-    width: 100%;
-    background: url(../images/denver.jpg);
-    background-size: 100% 100%;
-    filter: hue-rotate(310deg);
-    display: flex;
-    border-top: 1px solid silver;
-    border-bottom: 1px solid silver;
-    margin-bottom: 5%;
-}
-#mainSummary {
-    background: rgba(0, 0, 0, .8);
-    color: silver;
-    padding: 1% 2%;
-    border: 1px solid silver;
-    box-shadow: 0 0 30px black;
-    font-weight: bold;
-    word-spacing: 2px;
-    line-height: 30px;
-    margin: 0 200px;
-    width: 85%;
-    align-self: center;
-    animation: pop 2s 2s backwards;
-}
-    #mainSummary p {
-        font-size: 1.2rem;
-    }
-    #mainSummary p:first-letter {
-        font-size: 4rem;
-        color: rgba(0, 40, 150, 1);
-        float: left;
-        padding: .2rem;
-        margin-top: .6rem;
-    }
 #title {
     text-align: center;
     text-transform: uppercase;
@@ -267,21 +231,24 @@ nav {
     letter-spacing: 15px;
     margin-bottom: -.1%;
 }
+#primary {
+    min-height: auto;
+    padding: 1% 0;
+    width: 100%;
+    background: url(../images/denver.jpg);
+    background-size: 100% 100%;
+    filter: hue-rotate(310deg);
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    margin-bottom: 5%;
+}
 @keyframes pop {
     0% {
         opacity: 0;
     }
 }
-/*MY FIRST ATTEMPT AT A TRIANGLE ABOVE THE TITLE
-#title:before {
-    display: block;
-    content: "";
-    border-left: 41.75rem solid transparent;
-    border-right: 0 solid transparent;
-    border-bottom: 10rem solid silver;
-    position: relative;
-    margin-top: -24%;
-}*/
 #primary figure {
     display: none;
     width: 100%;
@@ -292,12 +259,96 @@ nav {
     width: 100%;
     height: 95%;
 }
+/*STYLING FOR EACH TRIANGLE BOX*/
+#triangleHolder {
+    width: 890px;
+    height: 400px;
+    perspective: 1000px;
+    perspective-origin: 50% 120%;
+}
+#triangle {
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-465px);
+    position: relative;
+    list-style: none;
+    margin: 2.5% 0;
+    transition: 1s;
+}
+#triangle li {
+    border: 1px solid silver;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    opacity: .25;
+    transition: 2s;
+    width: 100%;
+    height: 100%;
+    padding: 2.5% 10%;
+    box-sizing: border-box;
+}
+    #triangle li h1 {
+        text-align: center;
+        font-weight: bold;
+    }
+    #triangle li p {
+        font-size: 1.5rem;
+    }
+    #triangle li:nth-child(1) {
+        transform: translateZ(465px);
+        opacity: 1;
+    }
+    #triangle li:nth-child(2) {
+        transform: rotateY(90deg) translateZ(465px);
+    }
+    #triangle li:nth-child(3) {
+        transform: rotateY(180deg) translateZ(465px);
+    }
+    #triangle li:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(465px);
+    }
+/*STYLING FOR PREV & FORWARD BUTTONS*/
+.arrow {
+    position: absolute;
+    top: 250px;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    text-indent: -9999px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.prev1, .prev2, .prev3, .prev4 {
+    left: 0;
+    margin-top: -15%;
+    margin-left: 2%;
+    border-right: 40px solid rgba(250, 250, 250, .5);
+}
+
+    .prev1:hover, .prev2:hover, .prev3:hover, .prev4:hover {
+        border-right: 45px solid rgba(250, 250, 250, 1);
+    }
+
+.next1, .next2, .next3, .next4 {
+    right: 0;
+    margin-top: -15%;
+    margin-right: 2%;
+    border-left: 40px solid rgba(250, 250, 250, .5);
+}
+
+    .next1:hover, .next2:hover, .next3:hover, .next4:hover {
+        border-left: 45px solid rgba(250, 250, 250, 1);
+    }
+
 /*SIDEBAR STYLING--------------------------------------------------------------------------------*/
 aside {
     background: rgba(0, 0, 0, .8);
     border-left: 1px solid silver;
     box-shadow: 0 0 30px black;
-    width: 35%;
+    width: 20%;
+    box-sizing: border-box;
 }
 .headService {
     text-align: center;
