@@ -651,7 +651,7 @@ textarea {
 }
 
 /*MEDIA QUERIES--------------------------------------------------------------------------------*/
-@media (max-width:89rem) {
+@media (max-width:90rem) {
     .logo img {
         -webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -662,14 +662,27 @@ textarea {
         left: 10%;
         margin-top: -5%;
     }
-    .logo .backLogo {
-        -webkit-animation: ipadSlide 3s linear;
-        -o-animation: ipadSlide 3s linear;
-        -moz-animation: ipadSlide 3s linear;
-        animation: ipadSlide 3s linear;
+    #triangleHolder {
+        width: 700px;
     }
-    #mainSummary {
-        margin: 0 100px;
+    #triangle {
+        transform: translateZ(-510px);
+        margin-top: -5%;
+    }
+    #triangle li {
+        padding: 2% 5%;
+    }
+    #triangle li:nth-child(1) {
+        transform: translateZ(510px);
+    }
+    #triangle li:nth-child(2) {
+        transform: rotateY(60deg) translateZ(510px);
+    }
+    #triangle li:nth-child(3) {
+        transform: rotateY(-60deg) translateZ(510px);
+    }
+    #triangle li p {
+        font-size: 1.35rem;
     }
     #title {
         width: 50%;
@@ -683,9 +696,32 @@ textarea {
     }
 }
 @media (max-width: 75rem) {
-    nav {
+    #mainNav {
         width: 75%;
         transform: rotate(-12deg);
+    }
+    #triangleHolder {
+        width: 500px;
+        height: 500px;
+    }
+    #triangle {
+        transform: translateZ(-373px);
+        margin-top: -15%;
+    }
+    #triangle li:nth-child(1) {
+        transform: translateZ(373px);
+    }
+    #triangle li:nth-child(2) {
+        transform: rotateY(60deg) translateZ(373px);
+    }
+    #triangle li:nth-child(3) {
+        transform: rotateY(-60deg) translateZ(373px);
+    }
+    #triangle li p {
+        font-size: 1.2rem;
+    }
+    aside {
+        width: 25%;
     }
     #logoContainer {
         width: 25%;
@@ -707,7 +743,7 @@ textarea {
     }
 }
 @media (max-width: 60rem) {
-    nav {
+    #mainNav {
         width: 70%;
         transform: rotate(-12.9deg);
     }
@@ -722,18 +758,40 @@ textarea {
         width: 60%;
     }
     #primary {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-around;
-        box-sizing: border-box;
         padding: 10px;
     }
-    #mainSummary, #tabs {
+    #triangleHolder {
+        width: 600px;
+        margin: 0 10%;
+        float: none;
+    }
+    #triangle {
+        transform: translateZ(-443px);
+        margin-top: -10%;
+    }
+    #triangle li:nth-child(1) {
+        transform: translateZ(443px);
+    }
+    #triangle li:nth-child(2) {
+        transform: rotateY(60deg) translateZ(443px);
+    }
+    #triangle li:nth-child(3) {
+        transform: rotateY(-60deg) translateZ(443px);
+    }
+    #triangle li p {
+        font-size: 1.2rem;
+    }
+    #tabs {
         margin: 0 0 10px;
     }
     aside {
         border: 1px solid silver;
         width: 50%;
+        float: none;
+        margin: 0 auto;
+    }
+    aside ul li {
+        font-size: 1.5rem;
     }
     .contactTabs {
         font-size: .9rem;
@@ -746,15 +804,15 @@ textarea {
     }
 }
 @media (max-width: 50rem) {
-    nav {
+    #mainNav {
         transform: rotate(0deg);
         margin: 0;
         width: 60%;
     }
-    nav:before {
+    #mainNav:before {
         display: none;
     }
-    nav:after {
+    #mainNav:after {
         display: block;
         width: 100%;
         margin: 0;
@@ -787,6 +845,35 @@ textarea {
     }
     #primary {
         padding: 20px;
+    }
+    #triangleHolder {
+        margin: 0 5% 5%;
+        width: 500px;
+    }
+    #triangle {
+        transform: translateZ(-375px);
+        margin-top: -15%;
+    }
+    #triangle li:nth-child(1) {
+        transform: translateZ(375px);
+    }
+    #triangle li:nth-child(2) {
+        transform: rotateY(60deg) translateZ(375px);
+    }
+    #triangle li:nth-child(3) {
+        transform: rotateY(-60deg) translateZ(375px);
+    }
+    #triangle li p {
+        font-size: 1rem;
+    }
+    input[value="2"]:checked ~  #triangle { 
+        transform: translate(0, -15px) translateZ(-665px) rotateY(-60deg); 
+    }
+    input[value="3"]:checked ~  #triangle { 
+        transform: translate(0, 15px) translateZ(-665px) rotateY(60deg); 
+    }
+    aside {
+        width: 75%;
     }
     .panels {
         border: 1px solid silver;
@@ -821,6 +908,7 @@ textarea {
     }
     aside {
         width: 75%;
+        margin: 0 auto;
     }
     #primary {
         padding: 25px;
@@ -838,6 +926,30 @@ textarea {
     .panels {
         height: 620px;
     }
+    .homeLabel {
+        display: block;
+        width: 100%;
+    }
+    #triangleHolder {
+        margin: 0 auto;
+        width: 300px;
+    }
+    #triangle {
+        transform: translateZ(-235px);
+        margin-top: -40%;
+    }
+    #triangle li:nth-child(1) {
+        transform: translateZ(235px);
+    }
+    #triangle li:nth-child(2) {
+        transform: rotateY(60deg) translateZ(235px);
+    }
+    #triangle li:nth-child(3) {
+        transform: rotateY(-60deg) translateZ(235px);
+    }
+    #triangle li p {
+        font-size: 1rem;
+    }
 }
 @media(max-width: 35rem) {
     .panels {
@@ -845,7 +957,7 @@ textarea {
     }
 }
 @media (max-width: 30rem) {
-    nav {
+    #mainNav {
         width: 45%;
     }
     #logoContainer {
@@ -872,6 +984,9 @@ textarea {
     body:before {
         height: 210%;
     }
+    #triangleHolder {
+        margin: 0;
+    }
 }
 @media (max-width: 26rem) {
     .logo img {
@@ -883,4 +998,5 @@ textarea {
     .panels {
         height: 875px;
     }
+
 }
