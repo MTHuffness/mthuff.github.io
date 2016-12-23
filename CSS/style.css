@@ -741,6 +741,9 @@ textarea {
     #tabs {
         margin: 0 25px;
     }
+    #portfolioContainer {
+        width: 70%;
+    }
 }
 @media (max-width: 60rem) {
     #mainNav {
@@ -788,6 +791,11 @@ textarea {
         border: 1px solid silver;
         width: 50%;
         float: none;
+        margin: 5% auto;
+    }
+    #portfolioContainer {
+        float: none;
+        width: 90%;
         margin: 0 auto;
     }
     aside ul li {
@@ -950,6 +958,21 @@ textarea {
     #triangle li p {
         font-size: 1rem;
     }
+    #portfolioContainer {
+        height: 50rem;
+        margin-bottom: 5%;
+    }
+    .portfolio {
+        float: none;
+        height: 48%;
+        width: 100%;
+    }
+    #ppre {
+        margin-bottom: 2%;
+    }
+    .portfolio h2 {
+        font-size: 1.2rem;
+    } 
 }
 @media(max-width: 35rem) {
     .panels {
