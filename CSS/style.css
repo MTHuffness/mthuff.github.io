@@ -577,7 +577,6 @@ input[name="tabs"] {
 
 /*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
 #mainContact {
-    width: 120%;
     box-sizing: border-box;
     float: left;
     width: 80%;
@@ -625,6 +624,9 @@ form {
     padding: 4%;
 }
 .contactLabel {
+    font-size: 1.2rem;
+}
+#contactComment {
     font-size: 1.2rem;
 }
 .formArea {
@@ -731,8 +733,14 @@ textarea {
     #title {
         width: 60%;
     }
-    #mainSummary {
-        margin: 0 50px;
+    #mainContact {
+        width: 75%;
+    }
+    #companyInfo {
+        width: 40%;
+    }
+    #contactPrimary {
+        width: 50%;
     }
     body, #mainSummary p {
         font-size: .9rem;
@@ -801,9 +809,6 @@ textarea {
     .contactTabs {
         font-size: .9rem;
     }
-    #contactPrimary {
-        margin: 0 0 0 10px;
-    }
     body:before {
         height: 160%;
     }
@@ -814,6 +819,18 @@ textarea {
     }
     .panels {
         margin-bottom: 5%;
+    }
+    #mainContact {
+        float: none;
+        width: 100%;
+    }
+    #companyInfo {
+        width: 35%;
+        margin: 0 0 5% 0;
+    }
+    #contactPrimary {
+        margin: 0 0 0 5%;
+        width: 60%;
     }
 }
 @media (max-width: 50rem) {
@@ -897,11 +914,15 @@ textarea {
     }
     #companyInfo {
         width: 80%;
-        margin: 0;
+        float: none;
+        margin: 0 auto;
+        border: 1px solid silver;
+        padding: 2% 5%;
     }
     #contactPrimary {
         width: 90%;
-        margin: 20px 0;
+        float: none;
+        margin: 5% auto;
     }
     body:before {
         height: 200%;
@@ -975,6 +996,9 @@ textarea {
     .panels {
         height: 450px;
     } 
+    aside ul li {
+        font-size: 1.2rem;
+    }
 }
 @media(max-width: 35rem) {
     .panels {
@@ -1023,5 +1047,4 @@ textarea {
     .panels {
         height: 600px;
     }
-
 }
