@@ -569,6 +569,11 @@ input[name="tabs"] {
     border-right: 5px solid silver;
     border-radius: 0 10px 10px 10px;
 }
+    .panels:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
 
 /*CONTACT PAGE STYLING-------------------------------------------------------------------------*/
 #mainContact {
@@ -688,12 +693,6 @@ textarea {
         width: 50%;
         margin-left: 10%;
     }
-    #tabs {
-        margin: 0 100px;
-    }
-    #tabs {
-        margin: 0 50px;
-    }
 }
 @media (max-width: 75rem) {
     #mainNav {
@@ -738,11 +737,11 @@ textarea {
     body, #mainSummary p {
         font-size: .9rem;
     }
-    #tabs {
-        margin: 0 25px;
-    }
-    #portfolioContainer {
+    #portfolioContainer, #tabs {
         width: 70%;
+    }
+    #tabs {
+        margin-top: 5%;
     }
 }
 @media (max-width: 60rem) {
@@ -784,14 +783,12 @@ textarea {
     #triangle li p {
         font-size: 1.2rem;
     }
-    #tabs {
-        margin: 0 0 10px;
-    }
     aside {
         border: 1px solid silver;
         width: 50%;
         float: none;
         margin: 5% auto;
+        clear: both;
     }
     #portfolioContainer {
         float: none;
@@ -809,6 +806,14 @@ textarea {
     }
     body:before {
         height: 160%;
+    }
+    #tabs {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .panels {
+        margin-bottom: 5%;
     }
 }
 @media (max-width: 50rem) {
@@ -883,9 +888,6 @@ textarea {
     aside {
         width: 75%;
     }
-    .panels {
-        border: 1px solid silver;
-    }
     input:checked + label {
         border: 1px solid silver;
     }
@@ -931,9 +933,6 @@ textarea {
     .contactTabs {
         font-size: .7rem;
     }
-    .panels {
-        height: 620px;
-    }
     .homeLabel {
         display: block;
         width: 100%;
@@ -972,11 +971,14 @@ textarea {
     }
     .portfolio h2 {
         font-size: 1.2rem;
+    }
+    .panels {
+        height: 450px;
     } 
 }
 @media(max-width: 35rem) {
     .panels {
-        height: 740px;
+        height: 515px;
     }
 }
 @media (max-width: 30rem) {
@@ -990,7 +992,7 @@ textarea {
         padding: 30px;
     }
     .panels {
-        height: 830px;
+        height: 560px;
     }
     .contactTabs {
         font-size: .6rem;
@@ -1019,7 +1021,7 @@ textarea {
         font-size: .75rem;
     }
     .panels {
-        height: 875px;
+        height: 600px;
     }
 
 }
