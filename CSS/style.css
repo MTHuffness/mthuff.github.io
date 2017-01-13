@@ -16,11 +16,11 @@ body:before {
     content: "";
     display: block;
     position: absolute;
-    height: 120%; 
     width: 100%;
-    top: 0; left: 0;
+    height: 130%;
+    top: 0; left: 0; right: 0; bottom: 0;
     opacity: 0;
-    z-index: -100;
+    z-index: -1;
     background: linear-gradient(to right, 
     rgba(127, 0, 255, .5) 0%,
     rgba(0, 0, 0, 1) 5%,
@@ -29,6 +29,7 @@ body:before {
     rgba(0, 0, 0, 1) 100%) black;
     animation: opacity 15s infinite;
 }
+
 @keyframes opacity {
     50% {
         opacity: 1;
@@ -753,6 +754,9 @@ textarea {
     }
 }
 @media (max-width: 61rem) {
+    body:before {
+        height: 210%;
+    }
     #mainNav {
         width: 70%;
         transform: rotate(-12.9deg);
@@ -808,9 +812,6 @@ textarea {
     }
     .contactTabs {
         font-size: .9rem;
-    }
-    body:before {
-        height: 160%;
     }
     #tabs {
         float: none;
@@ -930,6 +931,9 @@ textarea {
 
 }
 @media (max-width: 42rem) {
+    body:before {
+        height: 225%;
+    }
     #title {
         width: 98%;
     }
@@ -1030,9 +1034,6 @@ textarea {
     aside {
         width: 100%;
     }
-    body:before {
-        height: 210%;
-    }
     #triangleHolder {
         margin: 0;
     }
@@ -1047,4 +1048,9 @@ textarea {
     .panels {
         height: 600px;
     }
+}
+
+
+.stuff {
+    background: red;
 }

@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+//COLOR CHANGING BAR ON SIDE
+
     $('#menu').click(function() {
         dropDown();
     });
@@ -114,4 +116,3 @@ $(document).ready(function() {
             opacity: .5
         });    
     });
-});
