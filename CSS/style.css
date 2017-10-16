@@ -228,9 +228,8 @@ header {
     text-transform: uppercase;
     border: 1px solid silver;
     width: 40%;
-    margin: 0 auto;
+    margin: 0 auto -.1%;
     letter-spacing: 15px;
-    margin-bottom: -.1%;
 }
 #primary {
     min-height: auto;
@@ -598,7 +597,6 @@ input[name="tabs"] {
     box-sizing: border-box;
     border: 1px solid silver;
     background: rgba(0, 0, 0, .8);
-    border: 1px solid silver;
     margin: 5%;
 }
 .contactButton {
@@ -849,14 +847,14 @@ textarea {
         margin: 0;
     }
     #linkMenu {
-        display: none;
+        display: block;
     }
     .link {
         float: none;
         border: none;
     }
     #menu {
-        display: block;
+        display: none;
     }
     #logoContainer {
         width: 40.01%;

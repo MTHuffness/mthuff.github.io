@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 //COLOR CHANGING BAR ON SIDE
 
-    $('#menu').click(function() {
+    $('#menu').click(function () {
         dropDown();
     });
 
@@ -13,18 +13,18 @@ $(document).ready(function() {
         $('.link').removeClass('link linkCurrent');
         $('#menuClose').fadeIn(1000);
         $('header').css('margin-bottom', '40%');
-};
+    }
 
-    $('#menuClose').click(function() {
+    $('#menuClose').click(function () {
         $(this).slideUp(1000);
         $('#linkMenu').delay(1000).slideUp(1000);
-        $('#menu').fadeIn(800);  
+        $('#menu').fadeIn(800);
         $('header').css('margin-bottom', '0');
     });
 
 //TRANSITIONS FOR EACH BUTTON
     //BOX 1 BUTTONS
-    $('.next1').click(function() {
+    $('.next1').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(-90deg)'
         });
@@ -33,10 +33,10 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(1)').css({
             opacity: .25
-        });    
+        });
     });
 
-    $('.prev1').click(function() {
+    $('.prev1').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(90deg)'
         });
@@ -45,10 +45,10 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(1)').css({
             opacity: .25
-        });    
+        });
     });
     //BOX 2 BUTTONS
-    $('.next2').click(function() {
+    $('.next2').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(-180deg)'
         });
@@ -57,9 +57,9 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(2)').css({
             opacity: .25
-        });    
+        });
     });
-    $('.prev2').click(function() {
+    $('.prev2').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(0deg)'
         });
@@ -68,10 +68,10 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(2)').css({
             opacity: .25
-        });    
+        });
     });
     //BOX 3 BUTTONS
-    $('.next3').click(function() {
+    $('.next3').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(-270deg)'
         });
@@ -80,9 +80,9 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(3)').css({
             opacity: .5
-        });    
+        });
     });
-    $('.prev3').click(function() {
+    $('.prev3').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(270deg)'
         });
@@ -91,10 +91,10 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(3)').css({
             opacity: .5
-        });    
+        });
     });
     //BOX 4 BUTTONS
-    $('.next4').click(function() {
+    $('.next4').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(0deg)'
         });
@@ -103,9 +103,9 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(4)').css({
             opacity: .5
-        });    
+        });
     });
-    $('.prev4').click(function() {
+    $('.prev4').click(function () {
         $('#triangle').css({
             transform: 'translateZ(-470px) rotateY(180deg)'
         });
@@ -114,5 +114,6 @@ $(document).ready(function() {
         });
         $('#triangle li:nth-child(4)').css({
             opacity: .5
-        });    
+        });
     });
+},
